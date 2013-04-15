@@ -1,0 +1,53 @@
+
+<html>
+<head>
+	<title>News Feed entry</title>
+	<META Http-Equiv="Cache-Control" Content="no-cache">
+	<META Http-Equiv="Pragma" Content="no-cache">
+	<META Http-Equiv="Expires" Content="0"> 
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js" ></script>
+	<script type="text/javascript" src="../js/admin_data_entry.js" ></script>
+	<link href="../style/newsfeed_entry.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="../js/newsfeed_entry.js" ></script>
+	<script type="text/javascript">
+		$(document).ready(isLogin());
+	</script>
+</head>
+	<body>
+		<div id="overlay" class="overlay"></div>
+		<div  id="popup" class="popup">
+			<input type="hidden" id="mode" value="new" />
+			<input type="hidden" id="index" value="" />
+			<input type="hidden" id="id" value="" />
+			<table>
+				<tr>
+					<td class="leftLabel">URL : </td>
+					<td class="rightFields"><input type="text" name="url" id="url" ><input type="hidden" id="preUrl" /></td>
+				</tr>
+				<tr>
+					<td class="leftLabel">Title : </td>
+					<td class="rightFields"><input type="text" name="title" id="title" ></td>
+				</tr>
+				<tr>
+					<td class="leftLabel">Snippet : </td>
+					<td class="rightFields"><textarea rows="5" cols="30" style="resize:none;" name="snippet" id="snippet"></textarea></td>
+				</tr>
+				<tr>
+					<td class="rightFields"><a href="#" id="btnSave">Save</a> </td>
+					<td class="centerLabel"><a href="#" id="btnCancel">Cancel</a> </td>
+				</tr>
+			</table>
+		</div>
+		<div class="main">
+		
+			<table id="data">
+				<tr>
+					<th height="20px">Title</th>
+					<th height="20px" >Snippet</th>
+					<th><div id="add" style="cursor:pointer;" >+</div></th>
+				</tr>
+			</table>
+		</div>
+		
+	</body>
+</html>

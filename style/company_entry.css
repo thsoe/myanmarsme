@@ -1,0 +1,137 @@
+@CHARSET "UTF-8";
+
+
+fileUpload{
+	display: none;	
+}
+
+.popup table{
+	font-family: Verdana;
+    font-size: 10px;
+}
+
+.overlay
+{
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   background: #000000;
+   opacity: .15;
+   /*filter: alpha(opacity=15);*/
+  /* -moz-opacity: .15;*/
+   z-index: 101;
+   display: none;
+}
+.popup
+{
+   display: none;
+   position: fixed;
+   width: 400px;
+   /*height: 500px;*/
+   top: 30%;
+   left: 50%;
+   margin-left: -190px;
+   margin-top: -100px;
+   background-color: #ffffff;
+   border:0px;
+   padding: 0px;
+   z-index: 102;
+   font-family: Verdana;
+   font-size: 10pt;
+}
+
+.main
+{
+	background-color: #ffffff;
+    padding: 0px;
+    font-family: Verdana;
+    font-size: 8px;
+    margin-left: 10%;
+    margin-right: 10%;
+  	margin-top: 10px;
+  	z-index: 0;
+  	width: 1000px;
+
+}
+a
+{
+   color: Black;
+   text-decoration: none;
+}
+
+.main table
+{
+	border: 0px;
+	border-style: none;
+	position: relative;
+	 font-family: Verdana;
+    font-size: 10px;
+    width: 1000px;
+    border-spacing: 0px;
+	/*height: 100%;*/
+}
+.main table th{
+	background: url("../images/menu_bg.png") repeat-x scroll 0 0 transparent;
+	height: 30px;
+}
+
+#url:hover{
+	text-decoration: none;
+	color: red;
+}
+
+.align_right
+{
+   text-align: right;
+}
+
+#remove{
+	text-align:center;
+	cursor : pointer;
+}
+
+.attach{
+	color: #0066FF;
+}
+.attach:hover{
+	text-decoration: underline;
+	color: #909090;
+}
+
+#hiddenFrame{
+	display: none;
+}
+
+input[type='text']{
+	width: 100%;
+}
+
+.leftLabel{
+	text-align: left;
+}
+.rightFields{
+	text-align: right;
+}
+.centerLabel{
+	text-align: center;
+}
+#loading{
+	position:fixed;
+	top: 50%;
+	margin-left: 50%;
+	z-index: 200;
+}
+#remove a{
+	color: black;
+	text-decoration: underline;
+}
+#remove a:hover{
+	color: red;
+	text-decoration: none;
+}

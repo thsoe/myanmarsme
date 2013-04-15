@@ -1,0 +1,59 @@
+<script type="text/javascript" src="/js/urlcheck.js"></script>
+<script type="text/javascript">
+
+$("#error1").hide();
+$("#error2").hide();
+$("#pleasewait").hide();
+$("#passwords").hide();
+</script>
+
+<div class="title_bar"><span>Account Recovery</span></div>
+<div class="content_top">
+<div class="cor_lf_t"></div>
+<div class="cor_rt_t"></div>
+</div>
+<p><!--do not touch this, this is for image--></p>
+
+<div class="container">
+<br />
+<p align="center">To recover your password, enter the username you use to sign in to MyanmarSME. This is the email address you associated with your account.</p>
+<br />&nbsp;&nbsp;
+<div id="recover-wrapper">
+<table id="sign-in-box" width="250" border="0" cellpadding="7" cellspacing="0" align="center">
+    <tbody>
+        <tr>
+            <td valign="top" align="left">
+                Email<br />
+                <input name="text" type="text" style="width:200px;float:left;font-size:14px;padding:3px;" /> 
+                <span id="error1" style="color:red;float:left;width:100%;font-size:11px;">Enter your email address.</span>
+                <span id="error2" style="color:red;float:left;width:100%;font-size:11px;">Email address not found!</span>
+            </td>
+        </tr>
+        <tr>
+            <td valign="bottom">
+            	<a href="javascript:recover()" class="button" style="float:left;margin-right:10px;">Recover</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<p id="pleasewait" style="color:green;clear:both;margin-top:10px;text-align:center;width:100%;" align="center">Loading Please Wait.</p>
+<p id="passwords" style="color:green;clear:both;margin-top:10px;text-align:center;width:100%;" align="center">Your password has been sent to your registered email address.</p>
+</div>
+<!--<div id="recover-wrapper">
+<input name="text" type="text" style="width:130px;float:left" /> &nbsp;&nbsp;Email
+<br />
+&nbsp;&nbsp;<p id="error1" style="color:red;float:left">Enter your email address.<br/>&nbsp;&nbsp;</p>
+&nbsp;&nbsp;<p id="error2" style="color:red;float:left">Email address not found.<br/>&nbsp;&nbsp;</p>
+<p><br /><a href="javascript:recover()" class="button">Recover</a>&nbsp;&nbsp;</p>
+<br />
+</div>
+<br />&nbsp;&nbsp;
+<p id="pleasewait" style="color:green;float:left">Loading Please Wait.</p>
+<p id="passwords" style="color:green;float:left;margin: 170px 0 20px 20px">Your password has been sent to your registered email address.</p>
+</div>-->
+
+<div class="content_btm">
+<div class="cor_lf_b"></div>
+<div class="cor_rt_b"></div>
+</div>

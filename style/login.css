@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+.main table{
+	margin-top: 20%;
+	background-color: #F8F8F8;
+	padding: 20px;
+}
+.main a{
+	color:black;
+	text-decoration: none;
+}
+.main a:hover{
+	color:gray;
+	text-decoration: none;
+}	
+#error{
+	color : red;
+}

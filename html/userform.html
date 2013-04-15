@@ -1,0 +1,54 @@
+<script type="text/javascript" src="/js/urlcheck.js"></script>
+<script type="text/javascript" src="/js/sme/userform.js"></script>
+<form>
+<table width="100%" border="0" cellpadding="10" cellspacing="0">
+<tbody>
+<tr>
+<td colspan="2" align="left" valign="top">
+<h2  style="border-bottom:1px solid #f58220;color:#f58220;padding-bottom:5px;font-size:13px;"><strong id="pinfo">Personal Information</strong></h2>
+</td>
+</tr>
+<tr>
+<td width="33%" align="right" valign="top">Full Name: <span style="color:#F00">*</span></td>
+<td width="67%" align="left" valign="top"><input type="text" id="fullName" style="width:400px;" /> <br />
+<p id="fullNameError" style="color:#CC3300">Enter your full name.</p>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top">Email: <span style="color:#F00">*</span></td>
+<td align="left" valign="top"><input type="text" id="email" style="width:400px;" /> <br />
+<p id="emailError" style="color:#CC3300">Enter your email address.</p>
+<p id="emailError2" style="color:#CC3300">Enter valid email address.</p>
+</td>
+</tr>
+<tr>
+<td width="33%" align="right" valign="top"><label id="passwordCheckBox">Enable Password Edit:</label> </td>
+<td width="67%" align="left" valign="top"><input type="checkbox" id="passwordEdit" name="passwordEdit" onclick="enablePasswordFields();"/><br />
+</tr>
+<tr>
+
+<td align="right" valign="top">Password: <span style="color:#F00">*</span></td>
+<td align="left" valign="top"><input type="password" id="password" style="width:400px;" /><br /> <span style="color:#F00;font-size:10px;padding-right:5px;"> Minimum 6 characters, max 15, case-sensitive!</span> <br />
+<p id="passwordError" style="color:#CC3300">Enter your password.</p>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top">Confirm Password: <span style="color:#F00">*</span></td>
+<td align="left" valign="top"><input type="password" id="confirmPassword" style="width:400px;" /> <br />
+<p id="confirmPasswordError" style="color:#CC3300">Enter your password.</p>
+<p id="confirmPasswordError2" style="color:#CC3300">Passwords do not match.</p>
+</td>
+</tr>
+
+<tr>
+<td align="right" valign="top">Phone Number:</td>
+<td align="left" valign="top"><input type="text" id="phoneNumber" style="width:400px;" /><br />
+
+<p id="phoneNumberError" style="color:#CC3300">Invalid Phone Number.</p></td>
+</tr>
+<tr>
+<td colspan="2" style="padding:5px 0 0 40% ;" align="center"><span style="padding:1px 30px 0 0;float:left;"><input class="button" type="reset" value="CLEAR" /></span> <a id="link" href="javascript:register()" class="button"><label id="buttonRegister">Register</label><label id="buttonUpdate">Update</label></a></td>
+</tr>
+</tbody>
+</table>
+</form>
