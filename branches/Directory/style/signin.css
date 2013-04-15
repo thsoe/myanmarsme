@@ -1,0 +1,187 @@
+#topnav{
+	float:right;
+	font-size:11px;
+	line-height:23px;
+	text-align:right;
+	padding:10px 5px 0 0;
+	*padding:8px 0 0 11px;
+}
+/*------------------ IE 7 hacking*/
+*:first-child+html #topnav{
+	padding:7px 0 0 30px;
+}
+*:first-child+html #rtopnav{
+	padding:7px 0 0 10px;
+}
+#rtopnav {
+	float:right;
+	font-size:11px;
+	line-height:23px;
+	text-align:right;
+	padding:10px 5px 0 0;
+}
+#topnav a.signin,
+#rtopnav a.reg {
+	color:#9e9d9d;
+	font-weight:bold;
+	border-radius:4px;
+	background:#666666;
+	padding:4px 6px 6px;
+	text-decoration:none;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	*padding:0px 5px 0px;
+}
+#topnav a.signin:hover,
+#rtopnav a.reg:hover{
+	color:#fff;
+	background:#4e4e4e;
+	*padding:0px 5px 0px;
+}
+a.signin,
+a.reg{
+	margin-left:3px;
+	position:relative;
+}
+a.signin span,
+a.reg span {
+	padding:4px 16px 6px 0;
+	background-repeat:no-repeat;
+	background-position:100% 50%;
+	background-image:url("../images/toggle_down_light.png");
+}
+#topnav a.menu-open ,
+#rtopnav a.menu-open {
+	outline:none;
+	color:#666!important;
+	background:#515151!important;
+}
+a.signin.menu-open span,
+a.reg.menu-open span {
+	color:#fff;
+	background-image:url("../images/toggle_up_dark.png");
+}
+#signin_menu,
+#reg_menu{
+	width:210px;
+	right:114px;
+	font-size:11px;
+	padding-left:6px;
+	color:#fff;
+}
+#signin_menu label,
+#reg_menu label{
+	color:#fff;
+}
+/*------------------ IE 7 hacking*/
+*:first-child+html #signin_menu,
+*:first-child+html #reg_menu{
+	width:210px;
+	right:114px;
+}
+#signin_menu{	
+	right:260px;
+}
+#reg_menu{
+	right:177px;
+}
+#reg_menu,
+#signin_menu{
+	z-index:9999;
+	display:none;
+	top: 25px;
+	color:#b0b0b0;
+	padding:12px;
+	margin-top:5px;
+	text-align:left;
+	position:absolute;
+	border:1px transparent;
+	background-color:#515151;
+	-moz-border-radius-topleft:5px;
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-bottomright:5px;
+	-webkit-border-top-left-radius:5px;
+	-webkit-border-bottom-left-radius:5px;
+	-webkit-border-bottom-right-radius:5px;	
+}
+#signin_menu input[type=text], #signin_menu input[type=password],
+#reg_menu input[type=text], #reg_menu input[type=password]{
+	display:block;
+	font-size:13px;
+	margin:0 0 5px;
+	padding:5px 0px 5px 5px;
+	width:203px;
+	border:1px solid #333;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+#signin_menu p ,
+#reg_menu p {
+	margin:0;
+}
+#signin_menu a ,
+#reg_menu a {
+	color:#fff;
+}
+#signin_menu label ,
+#reg_menu label{
+	*margin-right:20px;
+	font-weight:normal;
+}
+#signin_menu p.remember,
+#reg_menu p.remember{
+	padding:10px 0;
+}
+#signin_menu p.forgot, 
+#signin_menu p.complete ,
+#reg_menu p.forgot, 
+#reg_menu p.complete{
+	clear:both;
+	margin:5px 0;
+}
+#signin_menu p a ,
+#reg_menu p a{
+	color:#fff!important;
+	text-decoration:none;
+}
+#signin_menu p a:hover,
+#reg_menu p a:hover{
+	text-decoration:underline;
+}
+#signin_submit,
+#reg_submit {
+	color:#000;
+	font-size:11px;
+	margin:0 5px 0 0;
+	font-size:12px;
+	border:1px solid #333;
+	padding:5px 12px 6px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	background:#333 url('../images/bg-btn-gray.png') repeat-x scroll 0 0;
+}
+#username,
+#password{
+	background-color:#c1c1c0;
+}
+#username:focus,
+#password:focus{
+	background-color:#fff;
+}
+/*------------------ IE 7 hacking*/
+*:first-child+html #signin_submit{
+	border:none;
+	width:68px;
+	height:27px;
+}
+#signin_submit::-moz-focus-inner{
+	padding:0;
+	border:none;
+}
+#signin_submit:hover,
+#signin_submit:focus{
+	color:#fff;
+	cursor:pointer;
+	border:1px solid #333;
+	background-position:0 -5px;
+}

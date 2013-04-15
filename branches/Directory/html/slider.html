@@ -1,0 +1,16 @@
+<script type="text/javascript" src="/js/urlcheck.js"></script>
+<div class="viewport">
+<ul id="adlist" class="overview">
+
+</ul>
+</div>
+
+<script>
+loadCompanyAds();
+while($("#adlist li").length <9){
+$.each(adlist.companies, function(index, value) {
+  $("#adlist").append("<li><a href='javascript:goto(navigation.comDetail,&quot;"+value.id+"&quot;)'><img src='"+value.ad+"' width='185' height='132' /></a></li>");
+  });
+  }
+$('#slider1').tinycarousel({ display: 1, interval: true  });
+</script>

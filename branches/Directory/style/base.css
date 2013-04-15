@@ -1,0 +1,74 @@
+@charset "utf-8";
+/*------------------ base */
+html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, fieldset, table, img {
+	margin:0;
+	padding:0;
+	outline:0;
+	border:none;
+	text-indent:0;
+	color:#4e4e4e;
+	vertical-align:baseline;
+}
+a, a:link, a:visited {
+	color:#4e4e4e;
+	text-decoration:none;
+	outline:none;
+}
+a:hover {	
+	text-decoration:underline;
+}
+ul, ol {
+	list-style:none;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:11px;
+}
+caption, th {
+	text-align:left;
+}
+/*------------------ Global FONT Setting */
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background:#fcfcfc;
+	color:#767676;
+	margin:0;
+	padding:0;
+}
+body .normalFZ{
+	font-size:10px;	
+}
+input,textarea,select{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#717171;
+}
+/*------------------ IE 6 or less */
+* html body {
+	font-size:80%;	
+	line-height:150%;
+}
+/*------------------ IE 7 or more */
+*:first-child+html body {
+	font-size:80%;
+}
+#main {
+	width:1005px;
+	margin:0 auto;		
+	background-color:#fcfcfc;
+	padding:0;
+	height:100%;
+}
+/*------------------ start: clearfix */
+#main:after {
+	content:".";
+	display:block;
+	height:0px;
+	clear:both;
+	visibility:hidden;
+}
+#main { display:inline-table; }
+/*------------------ Hides from Mac IE */
+* html #main { height:1px; }
+#main { display:block; }
+/*------------------ end: clearfix */
