@@ -5,3 +5,7 @@ https://www.facebook.com/groups/592311780787925/doc/592313427454427/ <br>
 
 Sandbox:
 http://dev.yourmyanmarsme.com/index1.html#comList <br>
+
+Application Architecture:
+https://docs.google.com/document/d/1DZ74mnDSafkyU8o323ZfXZZi1u-xJjRB5dZzIMFSZcE/edit
+<br>
