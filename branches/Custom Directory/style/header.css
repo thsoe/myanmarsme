@@ -1,0 +1,22 @@
+#welcome{
+	float:right;
+	width:500px;
+	height:14px;
+	padding:0px;
+	margin:10px 0 0 0;
+}
+#welcome li{
+	display:inline;
+	float:right;
+	margin:0 10px 0 0;
+	font-size:12px;
+}
+#welcome li#wel_col1{
+	color:#f07200;
+}
+#welcome li#wel_col2{	
+	font-weight:bold;
+}
+#welcome li a{
+	color:#ef1d26;
+}

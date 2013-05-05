@@ -1,0 +1,10 @@
+<script type="text/javascript" src="/js/urlcheck.js"></script>
+
+<script>
+loadNewsFeeds();
+$.each(newsfeeds.news, function(index, value) {
+  $("#jqnews").append("<div class='news'>["+(index+1)+"/"+newsfeeds.news.length+"] <a href="+value.url+" target='_blank'>"+value.title+"</a> "+value.snippet+"</div>");
+});
+
+   
+</script>

@@ -1,0 +1,91 @@
+<script type="text/javascript" src="/js/urlcheck.js"></script>
+<script type="text/javascript">
+
+function show_alert()
+{
+var result;
+var alertString;
+if(edit){
+result=updateSMEUser();
+alertString="Your account has been successfully updated please logout and login again to see the changes.";
+}
+else{
+result=registerSMEUser();
+alertString="Hello..."+fullName+",\nThanks for your registration with our MMSME !\nWe have already sent you a confirmation mail to your mail address.";
+}
+if(result.result==0){
+alert(alertString);
+goto(navigation.home);
+}else{
+alert("An Error Occur During Registration Please Try Again");
+goto(navigation.register);
+}
+}
+function back(){
+if(edit){
+goto(navigation.profile);
+}
+else{
+goto(navigation.register);
+}
+}
+
+
+	$("#fullName1").text(fullName);
+$("#email1").text(email);
+$("#companyName1").text(companyName);
+$("#description1").text(description);
+$("#phoneNumber1").text(phoneNumber);
+</script>
+
+<div class="content_top">
+<div class="cor_lf_t"></div>
+<div class="cor_rt_t"></div>
+</div>
+<p><!--do not touch this, this is for image--></p>
+<div class="container"><form>
+<table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tbody>
+<tr>
+<td colspan="2" align="left" style="border-bottom:1px solid #e0e0e0;color:#f58220;padding-bottom:5px;"><strong>Personal Information</strong></td>
+</tr>
+<tr>
+<td width="33%" align="left"><strong>Full Name:</strong></td>
+<td width="67%" align="left">
+<p id="fullName1">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td align="left"><strong>Email:</strong></td>
+<td align="left">
+<p id="email1">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td align="left"><strong>Password:</strong></td>
+<td align="left">xxxxxx</td>
+</tr>
+<tr>
+<td align="left"><strong>Confirm Password:</strong></td>
+<td align="left">xxxxxx</td>
+</tr>
+<tr>
+<td align="left"><strong>Phone Number:</strong></td>
+<td align="left">
+<p id="phoneNumber1">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="padding:5px 0 0 40% ;" align="center"><span style="padding:1px 30px 0 0;float:left;"><input class="button" onclick="back()" type="button" value="Back" /></span> <input class="button" onclick="show_alert()" type="button" value="Submit" /></td>
+</tr>
+</tbody>
+</table>
+</form></div>
+<p><!--container--></p>
+<div class="content_btm">
+<div class="cor_lf_b"></div>
+<div class="cor_rt_b"></div>
+</div>
+<p><!--do not touch this, this is for image--> <!--md_content--> <!--content--></p>
+</body>
+</html>
