@@ -1,0 +1,33 @@
+<script type="text/javascript" src="/js/urlcheck.js"></script>
+<div id="under_con">
+
+<script>
+try{
+
+			$("#under_con").load(navigation.underCon);
+}catch(err){
+
+
+}
+		</script>
+
+        </div>
+ <noscript><link href="/style/import.css" rel="stylesheet" type="text/css" media="screen,tv" charset="utf-8" /></noscript>
+<h1><a href="javascript:goto(navigation.home)"><img src="/images/msme_logo.png" width="223" height="78" /></a></h1>
+<ul id="welcome" style="display:block">
+<li id="wel_col2"><a href="#lf_content"></a></li>
+<li id="wel_col1"></li>
+<li id="wel_col3"><noscript><!--#echo var="DATE_LOCAL" --></noscript></li>
+</ul>
+<script>
+try{
+parseHeader();
+}catch(err){
+
+
+
+}
+
+</script>
+
+

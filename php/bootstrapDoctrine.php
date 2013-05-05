@@ -1,0 +1,51 @@
+<?php
+// test.php
+use Doctrine\ORM\Tools\Setup;
+use Doctrine\ORM\EntityManager;
+
+use Doctrine\ORM\Configuration;
+require_once './lib/DoctrineORM/Doctrine/ORM/Tools/Setup.php';
+require_once 'entities/User.php';
+require_once 'entities/SMEUser.php';
+require_once 'entities/IndustrialZone.php';
+require_once 'entities/SMECompany.php';
+require_once 'entities/NewsFeed.php';
+require_once './lib/klogger/KLogger.php';
+date_default_timezone_set('Asia/Singapore');
+
+$lib = "./lib/DoctrineORM/";
+$log = new KLogger ( "../logs/log.txt" , KLogger::DEBUG );
+Setup::registerAutoloadDirectory($lib);
+
+
+
+
+    $cache = new \Doctrine\Common\Cache\ArrayCache;
+
+
+$config = new Configuration;
+$config->setMetadataCacheImpl($cache);
+$driverImpl = $config->newDefaultAnnotationDriver('./');
+$config->setMetadataDriverImpl($driverImpl);
+$config->setQueryCacheImpl($cache);
+$config->setProxyDir('./');
+$config->setProxyNamespace('MyProject\Proxies');
+
+
+    $config->setAutoGenerateProxyClasses(true);
+
+
+$dbParams = array(
+    'dbname' => 'msmeadmin',
+    'user' => 'msmeadmin',
+    'password' => 'mYANMARSME1234',
+    'host' => 'msmeadmin.db.6631622.hostedresource.com',
+    'driver' => 'pdo_mysql',
+);
+
+
+$em = EntityManager::create($dbParams, $config);
+
+//$user =$em->find('User','yenaingaung@gmail.com');
+//echo  $user->getPassword();
+?>

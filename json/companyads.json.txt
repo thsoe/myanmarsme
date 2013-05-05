@@ -1,0 +1,11 @@
+{"companies" :[
+{"id"     : "18",
+ "ad"   : "/images/ads1.png"
+},
+{"id"     : "7",
+ "ad"   : "/images/ads2.png"
+},
+{"id"     : "3",
+ "ad"   : "/images/ads3.png"
+}
+]}

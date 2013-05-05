@@ -1,0 +1,71 @@
+            	<div class="title_bar"><span>Details</span></div>
+                <div class="content_top"><div class="cor_lf_t"></div><div class="cor_rt_t"></div></div><!--do not touch this, this is for image-->
+
+                <div class="container">
+                    <div class="tab_container">
+                        <div id="tab1" class="tab_content">
+                            <h2 id="cd_name"></h2>
+                            <div class="company_detail">
+                            <p id ="cd_logo"></p>
+
+                            <p id="cd_ldesc" style="float:left;width:100%;padding:0 0 5px 5px;">
+                            <h3 id="cd_desc" style="font-size:14px;color:#06F;"></h3><br />
+                            </p>
+                            </div>
+                        </div> <!--tab_content-->
+                  	</div> <!--tab_container-->
+                    <table width="100%" border="0" cellpadding="8" cellspacing="3">
+                      <tr>
+                        <td colspan="3" align="center" style="background:#dfdfdf;"><span style="color:#000;font-weight:bold;">BUSINESS INFO</span></td>
+                      </tr>
+                      <tr>
+                        <td id="cd_binfo1" width="33%" align="center" valign="top"></td>
+                        <td id="cd_binfo2" width="33%" align="center" valign="top"></td>
+                        <td id="cd_binfo3" width="33%" align="center" valign="top"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="3" align="center" style="background:#dfdfdf;"><span style="color:#000;font-weight:bold;">WORKSIDE INFO</span></td>
+                      </tr>
+                      <tr>
+                        <td id="cd_winfo1" align="center" valign="top"></td>
+                        <td id="cd_winfo2" align="center" valign="top"></td>
+                        <td id="cd_winfo3" align="center" valign="top"></td>
+                      </tr>
+                      <tr>
+                        <td align="left" style="background:#dfdfdf;"><span style="color:#000;font-weight:bold;">BUSINESS ADDRESS</span></td>
+                        <td align="left" style="background:#dfdfdf;"><span style="color:#000;font-weight:bold;">WORKSITE ADDRESS</span></td>
+                        <td align="left" style="background:#dfdfdf;"><span style="color:#000;font-weight:bold;">CONTACT NUMBERS</span></td>
+                      </tr>
+                      <tr>
+                        <td id="cd_baddress" align="left" valign="top"></td>
+                        <td id="cd_waddress" align="left" valign="top"></td>
+                        <td id="cd_contacts" align="left" valign="top"></td>
+                      </tr>
+                    </table>
+                </div><!--container-->
+
+                <div class="content_btm"><div class="cor_lf_b"></div><div class="cor_rt_b"></div></div><!--do not touch this, this is for image-->
+
+
+			<script type="text/javascript" src="/js/urlcheck.js"></script>
+<script>
+try{
+//loadCompanyDetails(req_params);
+$("#cd_name").append(companyDetails.name);
+$("#cd_logo").append("<img src='"+companyDetails.logo+"' width='150' height='110' />");
+$("#cd_desc").append(companyDetails.description);
+$("#cd_ldesc").append(companyDetails.longDesc);
+$("#cd_binfo1").append("<img src='"+companyDetails.image1+"' width='150' height='110' />");
+$("#cd_binfo2").append("<img src='"+companyDetails.image2+"' width='150' height='110' />");
+$("#cd_binfo3").append("<img src='"+companyDetails.image3+"' width='150' height='110' />");
+$("#cd_winfo1").append("<img src='"+companyDetails.image4+"' width='150' height='126' />");
+$("#cd_winfo2").append("<img src='"+companyDetails.image5+"' width='150' height='126' />");
+$("#cd_winfo3").append("<img src='"+companyDetails.image6+"' width='150' height='126' />");
+$("#cd_baddress").append(companyDetails.businessAddress);
+$("#cd_waddress").append(companyDetails.worksiteAddress);
+$("#cd_contacts").append(companyDetails.contactNo1+"<br/>"+companyDetails.contactNo2);
+comp_id=null;}catch(err){
+
+
+}
+            </script>
