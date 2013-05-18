@@ -81,6 +81,18 @@ background:none;
 #header #welcome li a{
 	color:#ef1d26;
 }
+#get_started {
+	float:right;
+	margin:-15px 0 0 0;
+	padding:4px 10px;
+	color:#fff;
+	background:#ff6e00;
+	text-decoration:none;
+	border-radius:5px;
+}
+#get_started:hover {
+	background:#ef1d26;
+}
 #signin-wrapper{
 	float:left;
 	margin:70px 0 30px 335px;
@@ -123,6 +135,25 @@ table#sign-in-box{
 .blue_color{
 	color:#0067d1;	
 }
+a#wish_list {
+	float:right;
+	margin:10px 5px 0 0;
+}
+#top_menu{
+	float:left;
+	margin:45px 0 5px 550px;
+}
+#top_menu li{
+	float:left;
+}
+#top_menu li a{
+	color:#FF6E00;
+	text-transform:uppercase;
+	font-weight:bold;
+	padding:3px 10px;
+	text-decoration:none;
+}
+#top_menu li a:hover {text-decoration:underline;}
 /*======================================menu*/
 .jqueryslidemenu{
 	float:left;
@@ -694,8 +725,8 @@ a.read_more {
 	font-size:13px;
 	padding: 5px 0 2px 5px;
 	font-weight:bold;
-	border-bottom: 1px solid #FFCC66;
-	color:#FFCC66;
+	border-bottom: 1px solid #FF6E00;
+	color:#FF6E00;
 	margin-bottom:10px;
 }
 .tab_content h3{
