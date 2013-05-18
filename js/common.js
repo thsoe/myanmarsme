@@ -233,7 +233,7 @@ document.getElementById('wel_col2').innerHTML='<a href="javascript:goto(navigati
 document.getElementById('wel_col1').innerHTML='Welcome ' + auth.username;
 }
 else{
-document.getElementById('wel_col2').innerHTML='<a href="javascript:logout()">'+lables.logOut+'</a><br/><a href="javascript:goto(navigation.wishList)">Wish List</a>';
+document.getElementById('wel_col2').innerHTML='<a href="javascript:logout()">'+lables.logOut+'</a><br/><a id="wish_list" href="javascript:goto(navigation.wishList)">Wish List</a>';
 document.getElementById('wel_col1').innerHTML='Welcome <a href="javascript:goto(navigation.profile)">' + auth.username+'</a>';
 }
 
