@@ -27,6 +27,7 @@
 "comBox"          : "/html/comp_dropdown.html",
 "userForm"        : "/html/userform.html",
 "getAuth"         : "/php/getAuth.php",
+"getAuth_api"     : "/php/getAuth_api.php",
 "getZoneList"     : "/php/getZoneList.php",
 "getCompanyList"  : "/php/getCompanyList.php",
 "registerSMEUser" : "/php/registerSMEUser.php",
