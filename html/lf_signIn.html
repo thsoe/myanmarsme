@@ -15,6 +15,83 @@ $("#pleasewait").hide();
 <p><!--
 <div class="viewport">--></p>
 <div class="container" align="center">
+<div id="fb-root"></div>
+<script>
+	//-------- for facebook login --------//
+  window.fbAsyncInit = function() {
+    // init the FB JS SDK
+    FB.init({
+      appId      : '537645882963405',                        // App ID from the app dashboard
+      channelUrl : 'http://www.localhost.com', 				// Channel file for x-domain comms
+      status     : true,                                 // Check Facebook Login status
+      xfbml      : true                                  // Look for social plugins on the page
+    });
+  };
+
+  // Load the SDK asynchronously
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+   
+   document.getElementById('fb-login').onclick = function() {	
+	  FB.login(function(response) {
+        if (response.authResponse) {
+            var token = response.authResponse.accessToken;
+            accessToken = token;
+            FB.api('/me?access_token=' + token + '', function (response) {
+                //cb(response.email);
+				//alert(response.email);//return false;
+				//window.location="fbphp.php?uid="+response.email;
+				authenticate_api(response.email);
+            });
+        }
+     },{scope: 'email'});
+	};
+	
+	//-------- for google plus login --------//
+	function loginFinishedCallback(authResult) {
+    if (authResult) {
+      if (authResult['error'] == undefined){
+        gapi.auth.setToken(authResult); // Store the returned token.
+        toggleElement('signin-button'); // Hide the sign-in button after successfully signing in the user.
+        getEmail();                     // Trigger request to get the email address.
+      } else {
+        console.log('An error occurred');
+      }
+    } else {
+      console.log('Empty authResult');  // Something went wrong
+    }
+  }
+  function getEmail(){
+    // Load the oauth2 libraries to enable the userinfo methods.
+    gapi.client.load('oauth2', 'v2', function() {
+          var request = gapi.client.oauth2.userinfo.get();
+          request.execute(getEmailCallback);
+        });
+  }
+
+  function getEmailCallback(obj){
+	//alert(obj['email']);
+	authenticate_api(obj['email']);
+  }
+</script>
+<img src="/images/1facebook_login.png" id="fb-login" align="right" style="cursor: pointer;">
+<!-- 
+<button class="fb-fb-success" id="fb-login" align="right">Facebook Login</button>
+<fb:login-button></fb:login-button> -->
+<div id="signin-button" class="show">
+ <div class="g-signin" data-callback="loginFinishedCallback"
+  data-approvalprompt="force"
+  data-clientid="841077041629.apps.googleusercontent.com"
+  data-scope="https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/userinfo.email"
+  data-height="short"
+  data-cookiepolicy="single_host_origin">
+</div>
+</div>
 <div id="signin-wrapper">
 <table id="sign-in-box" width="250" border="0" cellpadding="7" cellspacing="0" align="center">
     <tbody>
