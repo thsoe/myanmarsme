@@ -5,4 +5,3 @@
 	$log = new KLogger ("../logs/log.txt" , KLogger::DEBUG );
 	require_once 'lib/DoctrineORM/Doctrine/ORM/Tools/Setup.php';
 ?>
-

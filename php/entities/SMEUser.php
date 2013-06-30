@@ -46,7 +46,7 @@ class SMEUser
    }
 
    public function getPassword(){
-   return $this->$user->getPassword();
+   return $this->user->getPassword();
    }
 
    public function getFullName(){
@@ -75,5 +75,10 @@ class SMEUser
    public function setCompanies($companies){
    $this->companies=$companies;
    }
+   
+   public function toJSON(){
+	//return '{ "fullName":"'.$this->fullName.'","password":"'.$this->getPassword().'","email":"'.$this->email.'","phoneNo":"'.$this->phoneNo.'"}';
+	return '{ "fullName":"'.$this->fullName.'","password":"'.$this->getPassword().'","email":"'.$this->email.'","phoneNo":"'.$this->phoneNo.'"}';
+	 }
 }
 ?>
