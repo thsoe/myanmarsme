@@ -176,7 +176,10 @@ newsfeeds= loadJSON(navigation.getNewsFeed);
 
 function loadAuthentication(){
 auth= loadJSON(navigation.getAuth,req_params);
+}
 
+function loadAuthentication_api(){
+auth= loadJSON(navigation.getAuth_api,req_params);
 }
 
 function registerSMEUser(){
@@ -299,7 +302,34 @@ goto(navigation.home);}
 
 }
 
+function authenticate_api(email){
+$("#pleasewait").show();
+$("#error").hide();
+$("#error1").hide();
+$("#error2").hide();
+
+//req_params = "userName="+$('input[name=text]').val()+"&password="+$('input[name=password]').val();
+req_params = "userName="+email;
+loadAuthentication_api();
+if (auth !=null){
+if(auth.result == 0 ){
+$("#error").show();
+$("#pleasewait").hide();
+}else{
+parseHeader();
+$("#error").hide();
+//$("#icon_1").hide();
+//$("#lfupload").show();
+$.cookies.set("session", JSON.stringify(auth));
+//setCookie("session",auth,1);
+goto(navigation.home);}
+}
+}
+
 function logout(){
+/* FB.logout(function(response) {
+  alert('logout');
+}); */
 auth={
 "username" : "Guest",
 "result" : 0
@@ -317,4 +347,3 @@ var email="";
 var companyName="";
 var description="";
 var phoneNumber="";
-
