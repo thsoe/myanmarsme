@@ -1,5 +1,5 @@
 var title="Personal Information";
-var edit = false;
+edit = false;
 $("#userForm").load(navigation.userForm);
 function register(){
 if(!validateUserForm()){
