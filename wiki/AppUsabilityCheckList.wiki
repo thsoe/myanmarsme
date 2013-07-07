@@ -1,0 +1,19 @@
+#summary Usability Checklist
+
+= Details =
+
+1. Does it conform the way user interact with the web? Does it focus on the activity instead of specific audience?
+
+2. Does it have only those features that are absolutely necessary for users to complete the activity the application is meant to support?
+
+3. Does it support user's mental model of what it does?
+
+4. Does it help users get started quickly so they can become intermediate users as soon as possible?
+
+5. Does it make it easy to recover from mistakes and difficult to make them in the first place?
+
+6. Does it have uniformly designed software interface elements, but leverages irregularity to create meaning and importance
+
+7. Does it reduce a clutter to a minimum?
+
+Reference: http://www.amazon.com/Designing-Obvious-Common-Approach-Application/dp/032145345X
