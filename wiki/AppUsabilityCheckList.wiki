@@ -1,5 +1,8 @@
 #summary Usability Checklist
 
+This check list helps to survey the usability of the application
+Web Layout Design has to consider the following questions:
+
 1. Does it conform the way user interact with the web? Does it focus on the activity instead of specific audience?
 
 2. Does it have only those features that are absolutely necessary for users to complete the activity the application is meant to support?
