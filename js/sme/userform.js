@@ -111,3 +111,8 @@ return false;
 return true;	
 }
 }
+
+/* function facebook_register()
+{
+	$("#userForm").load(navigation.register_api);
+} */

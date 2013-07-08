@@ -187,6 +187,11 @@ var result=loadJSON(navigation.registerSMEUser,req_params);
 return result;
 }
 
+function registeruser_api(){
+var result=loadJSON(navigation.registration_api,req_params);
+return result;
+}
+
 function updateSMEUser(){
 var result=loadJSON(navigation.updateSMEUser,req_params);
 return result;
@@ -302,7 +307,7 @@ goto(navigation.home);}
 
 }
 
-function authenticate_api(email){
+function authenticate_api(email, name){
 $("#pleasewait").show();
 $("#error").hide();
 $("#error1").hide();
@@ -313,17 +318,25 @@ req_params = "userName="+email;
 loadAuthentication_api();
 if (auth !=null){
 if(auth.result == 0 ){
-$("#error").show();
-$("#pleasewait").hide();
-}else{
-parseHeader();
-$("#error").hide();
-//$("#icon_1").hide();
-//$("#lfupload").show();
-$.cookies.set("session", JSON.stringify(auth));
-//setCookie("session",auth,1);
-goto(navigation.home);}
-}
+	/* $("#error").show();
+	$("#pleasewait").hide(); */
+	//goto(navigation.registration_api);
+	req_params = "fullName="+name+"&email="+email;
+	//result = registerSMEUser();
+	result = registeruser_api();
+	if(result.success)
+		authenticate_api(email, name);
+	else
+	{
+		$("#error").show();
+		$("#pleasewait").hide();
+	}
+	}else{
+	parseHeader();
+	$("#error").hide();
+	$.cookies.set("session", JSON.stringify(auth));
+	goto(navigation.home);}
+	}
 }
 
 function logout(){
@@ -339,7 +352,10 @@ parseHeader();
 //$("#lfupload").hide();
 $("#pleasewait").hide();
 $.cookies.del("session");
-goto(navigation.home);
+
+//goto(navigation.home);
+window.location = '#';
+window.location.reload();
 }
 
 var fullName="";
