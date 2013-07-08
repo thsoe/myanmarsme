@@ -18,13 +18,11 @@ $("#pleasewait").hide();
 <div id="fb-root"></div>
 <script>
 	//-------- for facebook login --------//
-   window.fbAsyncInit = function() {
+  window.fbAsyncInit = function() {
     // init the FB JS SDK
     FB.init({
-      //appId      : '537645882963405',                        // App ID from the app dashboard
-      appId      : '325576574237405',                        // App ID from the app dashboard
-      //channelUrl : 'http://www.localhost.com', 				// Channel file for x-domain comms
-      channelUrl : 'http://www.myanmarsme.com', 				// Channel file for x-domain comms
+      appId      : '537645882963405',                        // App ID from the app dashboard
+      channelUrl : 'http://www.localhost.com', 				// Channel file for x-domain comms
       status     : true,                                 // Check Facebook Login status
       xfbml      : true                                  // Look for social plugins on the page
     });
@@ -39,16 +37,17 @@ $("#pleasewait").hide();
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
    
-   document.getElementById('fb-login').onclick = function() {	
+   document.getElementById('fb-login').onclick = function() {
+	$.cookies.del("session");
 	  FB.login(function(response) {
         if (response.authResponse) {
             var token = response.authResponse.accessToken;
             accessToken = token;
             FB.api('/me?access_token=' + token + '', function (response) {
                 //cb(response.email);
-				//alert(response.email);//return false;
+				//alert(response.name);//return false;
 				//window.location="fbphp.php?uid="+response.email;
-				authenticate_api(response.email);
+				authenticate_api(response.email, response.name);
             });
         }
      },{scope: 'email'});
@@ -56,6 +55,7 @@ $("#pleasewait").hide();
 	
 	//-------- for google plus login --------//
 	function loginFinishedCallback(authResult) {
+	$.cookies.del("session");
     if (authResult) {
       if (authResult['error'] == undefined){
         gapi.auth.setToken(authResult); // Store the returned token.
@@ -95,7 +95,7 @@ $("#pleasewait").hide();
 </div>
 </div>
 <div id="signin-wrapper">
-<table id="sign-in-box"  width="250" border="0" cellpadding="7" cellspacing="0" align="center">
+<table id="sign-in-box" width="250" border="0" cellpadding="7" cellspacing="0" align="center">
     <tbody>
         <tr>
             <td style="width:250px;" valign="top" align="left">
