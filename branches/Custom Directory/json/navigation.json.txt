@@ -34,5 +34,9 @@
 "getNewsFeed"     : "/php/getNewsFeed.php",
 "error"           : "/html/error.html",
 "updateSMEUser"   : "/php/updateSMEUser.php",
-"registration_api": "/php/registration_api.php"
+"registration_api": "/php/registration_api.php",
+"dashboard"       : "/html/dashboard.html",
+"user_dashboard" : "/php/user_dashboard.php",
+"dashboard_exec" : "/php/dashboard_exec.php",
+"newdirectory"	:"/html/newdirectory.html"
 }
