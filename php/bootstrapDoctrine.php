@@ -10,6 +10,9 @@ require_once 'entities/SMEUser.php';
 require_once 'entities/IndustrialZone.php';
 require_once 'entities/SMECompany.php';
 require_once 'entities/NewsFeed.php';
+require_once 'entities/Tags.php';
+require_once 'entities/UserDirectory.php';
+require_once 'entities/DirectoryTag.php';
 require_once './lib/klogger/KLogger.php';
 date_default_timezone_set('Asia/Singapore');
 
