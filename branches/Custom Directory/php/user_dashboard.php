@@ -98,8 +98,7 @@
 				</table>
 				<div id="divnewdirectory" >
 					<br /><br />
-					<!--a id="get_started" href="javascript:goto(navigation.newdirectory)" style="float:left">Create Your Directory</a-->
-					<a id="get_started" href="#" style="float:left">Create Your Directory</a>	
+					<a id="get_started" href="javascript:goto(navigation.newdirectory)" style="float:left">Create Your Directory</a>
 				</div>
 				<br />Discover Directories : 
 				<!--img src="/images/tag.png" /-->
