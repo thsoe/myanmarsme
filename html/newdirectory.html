@@ -1,131 +1,96 @@
 <script type="text/javascript" src="/js/urlcheck.js"></script>
-<script type="text/javascript">
-
-$("#error").hide();
-$("#error1").hide();
-$("#error2").hide();
-$("#pleasewait").hide();
+<script language="javascript" src="/js/color_picker/js/colorpicker.js"></script>
+<link type="text/css" href="/js/color_picker/css/colorpicker.css" rel="stylesheet" />
+<script>
+	jQuery(document).ready(function(){
+		$('#txtcolor').ColorPicker(
+				{
+					onSubmit: function(hsb, hex, rgb, el) 
+					{
+						$(el).val(hex);
+						$(el).ColorPickerHide();
+					},
+					onBeforeShow: function () 
+					{
+						$(this).ColorPickerSetColor(this.value);
+					}
+				})
+	});
+	function get_public(val)
+	{
+		if(val == 1)
+		{
+			jQuery('#imgpublic').css('border','1px solid black');
+			jQuery('#imgprivate').css('border','');
+		}
+		else
+		{
+			jQuery('#imgpublic').css('border','');
+			jQuery('#imgprivate').css('border','1px solid black');
+		}
+		jQuery('#txtpublic').val(val);
+	}
+	
+	function create_directory()
+	{
+		var name = $('#txtdirectoryname').val();
+		var description = $('#txtdirectorydesc').val();
+		var colorcode = $('#txtcolor').val();
+		var is_public = $('#txtpublic').val();
+		var tags = $('#txtdirectorytag').val();
+		var rating = '1';
+		req_params = "name=" + name + "&colorcode=#" + colorcode + 
+					"&description=" + description + "&tags=" + tags + 
+					"&is_public=" + is_public + "&smeuseremail=" + auth.email + 
+					"&rating=" + rating;
+		//alert(req_params);
+		tag_result = loadJSON(navigation.directory_exec,req_params);
+		if(tag_result.success)
+		{
+			alert(tag_result.success);
+		}
+	}
 </script>
-
 <div class="content_top">
 <div class="cor_lf_t"></div>
 <div class="cor_rt_t"></div>
 </div>
 <p><!--do not touch this, this is for image--></p>
-<p><!--
-<div class="viewport">--></p>
-<div class="container" align="center">
-<div id="fb-root"></div>
-<script>
-	//-------- for facebook login --------//
-  window.fbAsyncInit = function() {
-    // init the FB JS SDK
-    FB.init({
-      appId      : '537645882963405',                        // App ID from the app dashboard
-      channelUrl : 'http://www.localhost.com', 				// Channel file for x-domain comms
-      status     : true,                                 // Check Facebook Login status
-      xfbml      : true                                  // Look for social plugins on the page
-    });
-  };
-
-  // Load the SDK asynchronously
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/all.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-   
-   document.getElementById('fb-login').onclick = function() {
-	$.cookies.del("session");
-	  FB.login(function(response) {
-        if (response.authResponse) {
-            var token = response.authResponse.accessToken;
-            accessToken = token;
-            FB.api('/me?access_token=' + token + '', function (response) {
-                //cb(response.email);
-				//alert(response.name);//return false;
-				//window.location="fbphp.php?uid="+response.email;
-				authenticate_api(response.email, response.name);
-            });
-        }
-     },{scope: 'email'});
-	};
+<form id="frmnewdirectory" name="frmnewdirectory" >
+<div id="divnewdirectory" class="container">	
+	<h2  style="border-bottom:1px solid #f58220;color:#f58220;padding-bottom:5px;font-size:13px;">
+		<strong id="pinfo">Create new directory</strong>		
+	</h2>
+	<br /><br />
 	
-	//-------- for google plus login --------//
-	function loginFinishedCallback(authResult) {
-	$.cookies.del("session");
-    if (authResult) {
-      if (authResult['error'] == undefined){
-        gapi.auth.setToken(authResult); // Store the returned token.
-        toggleElement('signin-button'); // Hide the sign-in button after successfully signing in the user.
-        getEmail();                     // Trigger request to get the email address.
-      } else {
-        console.log('An error occurred');
-      }
-    } else {
-      console.log('Empty authResult');  // Something went wrong
-    }
-  }
-  function getEmail(){
-    // Load the oauth2 libraries to enable the userinfo methods.
-    gapi.client.load('oauth2', 'v2', function() {
-          var request = gapi.client.oauth2.userinfo.get();
-          request.execute(getEmailCallback);
-        });
-  }
-
-  function getEmailCallback(obj){
-	//alert(obj['email']);
-	authenticate_api(obj['email']);
-  }
-</script>
-<img src="/images/1facebook_login.png" id="fb-login" align="right" style="cursor: pointer;">
-<!-- 
-<button class="fb-fb-success" id="fb-login" align="right">Facebook Login</button>
-<fb:login-button></fb:login-button> -->
-<div id="signin-button" class="show">
- <div class="g-signin" data-callback="loginFinishedCallback"
-  data-approvalprompt="force"
-  data-clientid="841077041629.apps.googleusercontent.com"
-  data-scope="https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/userinfo.email"
-  data-height="short"
-  data-cookiepolicy="single_host_origin">
+	<div width="80%" style="padding-left:150px;" >
+		<strong id="pinfo">What Kind of Directory are you creating?</strong>
+		<br /><br />
+		Directory Name 
+		<input type="text" name="txtdirectoryname" id="txtdirectoryname" />
+		<input type="text" name="txtcolor" id="txtcolor" />		
+		<br /><br />
+		<img id="imgpublic" src="/images/public.png" onclick="get_public(1);" style="cursor:pointer;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img id="imgprivate" src="/images/private.png" onclick="get_public(0);" style="cursor:pointer;">
+		<input type="hidden" id="txtpublic" name="txtpublic" />
+		<br /><br />
+		Describe Briefly on what your directory is about<br />
+		<input type="text" name="txtdirectorydesc" id="txtdirectorydesc" size="120"/>
+		<br /><br />
+		Directory Tag 
+		<input type="text" name="txtdirectorytag" id="txtdirectorytag" />
+		<br /><br />
+		<!--a href="javascript:create_directory()" class="button" style="float:left;margin-right:10px;">Create Your Directory</a-->
+		<a href="javascript:goto(navigation.dashboard)" class="button" style="float:left;margin-right:10px;">Create Your Directory</a>
+        <a href="javascript:goto(navigation.dashboard) " class="button" style="float:left;margin-right:10px;">Cancel</a>
+	</div>	
 </div>
-</div>
-<div id="signin-wrapper">
-<table id="sign-in-box" width="250" border="0" cellpadding="7" cellspacing="0" align="center">
-    <tbody>
-        <tr>
-            <td style="width:250px;" valign="top" align="left">
-                Email<br />
-                <input name="text" type="text" style="width:200px;float:left;font-size:14px;padding:3px;" /> 
-                <span id="error1" style="width:100%;float:left;color:red;font-size:11px;">Enter your email address !</span>
-            </td>
-        </tr>
-        <tr>
-            <td valign="top" align="left">
-                Password<br />
-                <input name="password" type="password" style="width:200px;float:left;font-size:14px;padding:3px;" onkeydown="enterKey(event,function() { authenticate(); })" /> <span id="error2" style="color:red;float:left;width:100%;font-size:11px;">Enter your password !</span>
-            </td>
-        </tr>
-        <tr>
-            <td valign="bottom">
-            	<a href="javascript:authenticate()" class="button" style="float:left;margin-right:10px;">sign in</a>
-            	<a href="javascript:goto(navigation.recover) " style="color:blue;font-size:11px;float:left;padding-top:5px;">Forgot Password ?</a>
-            </td>
-        </tr>
-        <!--<tr>
-            <td valign="bottom" align="left"> <a href="javascript:goto(navigation.recover) " style="color:blue;">Forgot Password ?</a></td>
-        </tr>-->
-    </tbody>
-</table>
-</div>
-<p id="pleasewait" style="color:green;clear:both;margin-top:10px;text-align:center;width:100%;">Loading Please Wait.</p>
-<p id="error" style="color:red;clear:both;margin-top:10px;text-align:center;width:100%;">The username or password you entered is incorrect.</p>
-</div>
+</form>
+<p><!--container--></p>
 <div class="content_btm">
 <div class="cor_lf_b"></div>
 <div class="cor_rt_b"></div>
 </div>
+<p><!--do not touch this, this is for image--> <!--md_content--> <!--content--></p>
+</body>
+</html>
