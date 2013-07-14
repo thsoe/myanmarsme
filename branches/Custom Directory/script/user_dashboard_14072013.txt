@@ -1,0 +1,46 @@
+DROP TABLE IF EXISTS `directorytag`;
+CREATE TABLE `directorytag` (
+  `directorytagid` bigint(20) unsigned NOT NULL auto_increment,
+  `directoryid` bigint(20) unsigned NOT NULL default '0',
+  `tagid` bigint(20) unsigned NOT NULL default '0',
+  PRIMARY KEY  (`directorytagid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `directorytag` (`directorytagid`,`directoryid`,`tagid`) VALUES
+ (1,1,1),
+ (2,1,2),
+ (3,2,1),
+ (4,3,1),
+ (5,4,2);
+
+DROP TABLE IF EXISTS `tags`;
+CREATE TABLE `tags` (
+  `tagid` bigint(20) unsigned NOT NULL auto_increment,
+  `tagname` varchar(150) NOT NULL default '',
+  PRIMARY KEY  (`tagid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `tags` (`tagid`,`tagname`) VALUES
+ (1,'Construction Materials'),
+ (2,'Electronic Suppliers');
+
+DROP TABLE IF EXISTS `userdirectory`;
+CREATE TABLE `userdirectory` (
+  `directoryid` bigint(20) unsigned NOT NULL auto_increment,
+  `name` varchar(150) NOT NULL default '',
+  `colorcode` varchar(10) NOT NULL default '',
+  `description` text NOT NULL,
+  `smeuseremail` varchar(50) NOT NULL default '',
+  `public` tinyint(1) unsigned NOT NULL default '0' COMMENT
+'0-private, 1-public',
+  `rating` int(10) unsigned NOT NULL default '0',
+  PRIMARY KEY  (`directoryid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `userdirectory`
+(`directoryid`,`name`,`colorcode`,`description`,`smeuseremail`,`public`,`rating`)
+VALUES
+ (1,'ABC Company','#e46c0a','TESTING DESCRIPTION','abc@gmail.com',1,1),
+ (2,'Target ','#00b050','Foliar Fertilizer','abc@gmail.com',1,2),
+ (3,'Mingalar','#9bbb59','Online Service','abc@gmail.com',1,3),
+ (4,'MMSME','#948A54','Communication','abc@gmail.com',1,4);
