@@ -1,0 +1,2 @@
+ALTER TABLE `myanmarsme`.`user` MODIFY COLUMN `password` VARCHAR(15)
+CHARACTER SET latin1 COLLATE latin1_swedish_ci;
