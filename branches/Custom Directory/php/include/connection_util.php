@@ -32,7 +32,7 @@ class ConnectionUtil{
     'dbname' => 'msmeadminuat',
     'user' => 'msmeadminuat',
     'password' => 'Myanmarsme@123',
-    'host' => 'localhost',
+    'host' => 'msmeadminuat.db.6631622.hostedresource.com',
     'driver' => 'pdo_mysql',
 	);
 
