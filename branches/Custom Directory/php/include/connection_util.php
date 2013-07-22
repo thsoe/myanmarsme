@@ -20,22 +20,22 @@ require_once 'entities/DirectoryTag1.php';
 
 <?php
 /**
- * 
+ *
  * @author thanhtetaung
  *
  */
 class ConnectionUtil{
 	private static $em=NULL;
 	private static $lib = "lib/DoctrineORM/";
-	
+
 	private static $dbParams = array(
-    'dbname' => 'myanmarsme',
-    'user' => 'msmeadmin',
-    'password' => 'mYANMARSME1234',
+    'dbname' => 'msmeadminuat',
+    'user' => 'msmeadminuat',
+    'password' => 'Myanmarsme@123',
     'host' => 'localhost',
     'driver' => 'pdo_mysql',
 	);
-	
+
 	/*
 	private static $dbParams = array(
     'dbname' => 'msmeadmiin',
@@ -45,9 +45,9 @@ class ConnectionUtil{
     'driver' => 'pdo_mysql',
 	);*/
 	private function _construct(){
-				
+
 	}
-	
+
 	/**
 	 * getting EntityManger
 	 * @return  EntityManager
@@ -68,7 +68,7 @@ class ConnectionUtil{
 		}
 		return ConnectionUtil::$em;
 	}
-	
+
 	/**
 	 * beginning transaction
 	 */
@@ -76,7 +76,7 @@ class ConnectionUtil{
 		ConnectionUtil::getEntityManager();
 		ConnectionUtil::$em->getConnection()->beginTransaction();
 	}
-	
+
 	/**
 	 * rollback current transaction to save point
 	 */
@@ -84,7 +84,7 @@ class ConnectionUtil{
 		ConnectionUtil::getEntityManager();
 		ConnectionUtil::$em->getConnection()->rollback();
 	}
-	
+
 	/**
 	 * committing current transaction
 	 */
@@ -92,7 +92,7 @@ class ConnectionUtil{
 		ConnectionUtil::getEntityManager();
 		ConnectionUtil::$em->getConnection()->commit();
 	}
-	
+
 	/**
 	 * saving entity to database
 	 * @param $entity entity object
@@ -102,7 +102,7 @@ class ConnectionUtil{
 		ConnectionUtil::$em->persist($entity);
 		ConnectionUtil::$em->flush();
 	}
-	
+
 	/**
 	 * updating entity to database by id of entity
 	 * @param $entity entity object
@@ -112,7 +112,7 @@ class ConnectionUtil{
 		ConnectionUtil::$em->merge($entity);
 		ConnectionUtil::$em->flush();
 	}
-	
+
 	/**
 	 * delete from data base by id of entity
 	 * @param  $entity entity object
@@ -122,7 +122,7 @@ class ConnectionUtil{
 		ConnectionUtil::$em->remove($entity);
 		ConnectionUtil::$em->flush();
 	}
-	
+
 	/**
 	 * excuting doctrine query language
 	 * @param $dql doctrine query language
@@ -132,7 +132,7 @@ class ConnectionUtil{
 		ConnectionUtil::$em->createQuery($dql)->execute();
 		ConnectionUtil::$em->flush();
 	}
-	
+
 	/**
 	 * executing doctrine query language
 	 * @param $dql doctrine query language
@@ -143,7 +143,7 @@ class ConnectionUtil{
 		$query=ConnectionUtil::$em->createQuery($dql);
 		return $query->getResult();
 	}
-	
+
 	/**
 	 * executing doctrine query language by limitation
 	 * @param $dql doctrine query language
@@ -158,7 +158,7 @@ class ConnectionUtil{
 		$query->setMaxResults($limit);
 		return $query->getResult();
 	}
-	
+
 	/**
 	 * finding by entity name with limitation
 	 * @param $name entity name
@@ -171,7 +171,7 @@ class ConnectionUtil{
 		ConnectionUtil::getEntityManager();
 		return ConnectionUtil::$em->getRepository($name)->findBy(array(),$order,$limit,$offset);
 	}
-	
+
 	/**
 	 * finding by entity name
 	 * @param $name  entity name
@@ -181,7 +181,7 @@ class ConnectionUtil{
 		ConnectionUtil::getEntityManager();
 		return ConnectionUtil::$em->getRepository($name)->findAll();
 	}
-	
+
 	/**
 	 * finding by id
 	 * @param $name
@@ -192,7 +192,7 @@ class ConnectionUtil{
 		ConnectionUtil::getEntityManager();
 		return ConnectionUtil::$em->find($name,$id);
 	}
-	
+
 	/**
 	 * finding unique by criteria
 	 * @param $name
@@ -204,7 +204,7 @@ class ConnectionUtil{
 	 	return ConnectionUtil::$em->getRepository($name)
 	 							  ->findOneBy($criteria);
 	}
-	
+
 	/**
 	 * finding by criteria
 	 * @param $name
@@ -216,10 +216,10 @@ class ConnectionUtil{
 		return ConnectionUtil::$em->getRepository($name)
 	 							  ->findBy($criteria);
 	}
-	
+
 	/**
 	 * finding by criteria with limitation
-	 * @param $name entity name 
+	 * @param $name entity name
 	 * @param $criteria criteria to filter
 	 * @param $order order by clause
 	 * @param $limit limit
