@@ -1,29 +1,31 @@
 <script type="text/javascript" src="/js/urlcheck.js"></script>
+<script type="text/javascript" src="/js/sme/directory.js"></script>
             	<div class="title_bar"><span>Company Detail</span></div>
                 <div class="content_top"><div class="cor_lf_t"></div><div class="cor_rt_t"></div></div><!--do not touch this, this is for image-->
 
                 <div class="container">
-                	<form action="">
+                	<form id="frmcompany" name="frmcompany" method="post"  enctype="multipart/form-data">
                     <table width="100%" border="0" cellpadding="5" cellspacing="0">
                       <tr>
                         <td width="33%" align="left" valign="top" style="">Company Name:</td>
                         <td width="67%" align="left" valign="top" style="">
-                        	<input type="text" name="" value="" style="width:400px;" />
+                        	<input type="text" name="name" id="name" value="" style="width:400px;" />
                         </td>
                       </tr>
                       <tr>
                         <td align="left" valign="top" style="">Company Logo:</td>
                         <td  align="left" valign="top" style="">
-                        	<input type="file" name="datafile" style="width:400px;" />
+							<input type="hidden" name="MAX_FILE_SIZE" value="2000000">
+                        	<input type="file" name="logo" id="logo" style="width:400px;" />
                         </td>
                       </tr>
                       <tr>
                         <td align="left" valign="top" style="border-bottom:1px dotted #dfdfdf;">Company Description:</td>
                         <td align="left" valign="top" style="border-bottom:1px dotted #dfdfdf;">
-                        	<textarea name="aa" ROWS="4" style="width:400px;"></textarea>
+                        	<textarea name="description" id="description" ROWS="4" style="width:400px;"></textarea>
                         </td>
                       </tr>
-                      <tr>
+                      <!--tr>
                         <td colspan="2" align="center"><span style="color:#000;font-weight:bold;">BUSINESS INFO</span></td>
                       </tr>
                       <tr>
@@ -64,36 +66,45 @@
                         <td align="left" valign="top" style="border-bottom:1px dotted #dfdfdf;">
                         	<input type="file" name="datafile" style="width:400px;" />
                         </td>
-                      </tr>
+                      </tr-->
                       <tr>
                         <td align="left" valign="top" style="border-bottom:1px dotted #dfdfdf;">Business Address:</td>
                         <td align="left" valign="top" style="border-bottom:1px dotted #dfdfdf;">
-                        	<textarea name="aa" ROWS="4" style="width:400px;"></textarea>
+                        	<textarea name="businessAddress" id="businessAddress" ROWS="4" style="width:400px;"></textarea>
                         </td>
                       </tr>
                       <tr>
                         <td align="left" valign="top" style="border-bottom:1px dotted #dfdfdf;">Worksite Address:</td>
                         <td align="left" valign="top" style="border-bottom:1px dotted #dfdfdf;">
-                        	<textarea name="aa" ROWS="4" style="width:400px;"></textarea>
+                        	<textarea name="worksiteAddress" id="worksiteAddress" ROWS="4" style="width:400px;"></textarea>
                         </td>
                       </tr>
                       <tr>
                         <td align="left" valign="top" style="border-bottom:1px dotted #dfdfdf;">Contact Number 1:</td>
                         <td align="left" valign="top" style="border-bottom:1px dotted #dfdfdf;">
-                        	<input type="text" name="" value="" style="width:400px;" />
+                        	<input type="text" name="contactNo1" id="contactNo1" value="" style="width:400px;" />
                         </td>
                       </tr>
                        <tr>
                         <td align="left" valign="top" style="border-bottom:1px dotted #dfdfdf;">Contact Number 2:</td>
                         <td align="left" valign="top" style="border-bottom:1px dotted #dfdfdf;">
-                        	<input type="text" name="" value="" style="width:400px;" />
+                        	<input type="text" name="contactNo2" id="contactNo2" value="" style="width:400px;" />
+                        </td>
+                      </tr>
+					  <tr>
+                        <td align="left" valign="top" style="">Advertising Image:</td>
+                        <td align="left" valign="top" style="">
+							<input type="hidden" name="MAX_FILE_SIZE" value="2000000">
+                        	<input type="file" name="ad" id="ad" style="width:400px;" />
+							<input type="hidden" name="directoryid" id="directoryid">
                         </td>
                       </tr>
                       <tr>
                         <td align="left" valign="top" style="">&nbsp;</td>
                         <td align="left" valign="top" style="">
                             <span style="padding:1px 30px 0 0;float:left;"><input class="button" type="reset" value="CLEAR" /></span>
-                            <a href="#" class="button">Upload</a>
+                            <!--a href="javascript:upload_company();" class="button">Upload</a-->
+							<input class="button" type="submit" value="Upload" onclick="upload_company();"/>
                         </td>
                       </tr>
                     </table>

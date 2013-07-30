@@ -13,15 +13,15 @@ var activeMenu = null;
 var links;
 var recoverStatus;
 
+// check the input email is valid email format or not.
 function validateEmail(email)
 {
 var x=email;
 var atpos=x.indexOf("@");
 var dotpos=x.lastIndexOf(".");
 if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
-  {
-  
-  return false;
+  {  
+	return false;
   }
 return true;
 }
@@ -54,9 +54,9 @@ function swapJsonKeyValues(input) {
     return output;
 }
 
+// check input phone no is valid or not.
 function validatePhNo(no){
 	var s =!(no.match("[A-z]"));
-
 	return s
 }
 
@@ -174,13 +174,16 @@ function loadNewsFeeds(){
 newsfeeds= loadJSON(navigation.getNewsFeed);
 }
 
+//-------- give email and password parameters to getAuth.php to check for login --------//
 function loadAuthentication(){
 auth= loadJSON(navigation.getAuth,req_params);
 }
 
+//-------- give email and name parameters to getAuth_api.php to check for login --------//
 function loadAuthentication_api(){
 auth= loadJSON(navigation.getAuth_api,req_params);
 }
+
 
 function registerSMEUser(){
 var result=loadJSON(navigation.registerSMEUser,req_params);
@@ -252,9 +255,9 @@ function recover()
 	$("#pleasewait").show();
 	if($('input[name=text]').val()==""){
 	$("#error1").show();
-$("#error2").hide();
-$("#pleasewait").hide();
-$("#passwords").hide();	
+	$("#error2").hide();
+	$("#pleasewait").hide();
+	$("#passwords").hide();	
 	}else{
 	req_params = "userName="+$('input[name=text]').val();
 	loadRecover();
@@ -272,12 +275,12 @@ $("#passwords").hide();
 	}
 }
 
+//------------- check email, password for sign in from If_signIn.html ---------- //
 function authenticate(){
 $("#pleasewait").show();
 $("#error").hide();
 $("#error1").hide();
 $("#error2").hide();
-
 
 if($('input[name=text]').val()==""){
 $("#error1").show();
@@ -286,7 +289,6 @@ $("#pleasewait").hide();
 $("#error2").show();
 $("#pleasewait").hide();
 }else{
-
 $("#error1").hide();
 $("#error2").hide();
 req_params = "userName="+$('input[name=text]').val()+"&password="+$('input[name=password]').val();
@@ -304,46 +306,47 @@ $.cookies.set("session", JSON.stringify(auth));
 //setCookie("session",auth,1);
 goto(navigation.home);}
 }}
-
 }
 
-function authenticate_api(email, name){
-$("#pleasewait").show();
-$("#error").hide();
-$("#error1").hide();
-$("#error2").hide();
-
-//req_params = "userName="+$('input[name=text]').val()+"&password="+$('input[name=password]').val();
-req_params = "userName="+email;
-loadAuthentication_api();
-if (auth !=null){
-if(auth.result == 0 ){
-	/* $("#error").show();
-	$("#pleasewait").hide(); */
-	//goto(navigation.registration_api);
-	req_params = "fullName="+name+"&email="+email;
-	//result = registerSMEUser();
-	result = registeruser_api();
-	if(result.success)
-		authenticate_api(email, name);
-	else
-	{
-		$("#error").show();
-		$("#pleasewait").hide();
-	}
-	}else{
-	parseHeader();
+//------------- check email, password for facebook login from If_signIn.html ---------- //
+function authenticate_api(email, name)
+{
+	$("#pleasewait").show();
 	$("#error").hide();
-	$.cookies.set("session", JSON.stringify(auth));
-	goto(navigation.home);}
+	$("#error1").hide();
+	$("#error2").hide();
+	req_params = "userName="+email;
+	loadAuthentication_api();
+	if (auth != null)
+	{
+		if(auth.result == 0) // if the email is not found, register in user
+		{
+			req_params = "fullName="+name+"&email="+email;
+			result = registeruser_api();
+			if(result.success)	// if the registration is success, login again with email.
+				authenticate_api(email, name);
+			else
+			{
+				$("#error").show();
+				$("#pleasewait").hide();
+			}
+		}
+		else
+		{
+			parseHeader();
+			$("#error").hide();
+			$.cookies.set("session", JSON.stringify(auth));
+			goto(navigation.home);
+		}
 	}
 }
 
+//------------- when click sign out ---------- //
 function logout(){
 /* FB.logout(function(response) {
   alert('logout');
 }); */
-auth={
+auth = {
 "username" : "Guest",
 "result" : 0
 };
