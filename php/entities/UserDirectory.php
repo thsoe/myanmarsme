@@ -117,5 +117,23 @@ class UserDirectory
 
 				//,"tagid":"'.$this->gettagid().'","tagname":"'.$this->directorytag->getTagname().'"				
 	 }
+	 
+	 /**
+     * @ManyToMany(targetEntity="Tags")
+     * @JoinTable(name="DirectoryTag",
+     *      joinColumns={@JoinColumn(name="directoryid", referencedColumnName="directoryid")},
+     *      inverseJoinColumns={@JoinColumn(name="tagid", referencedColumnName="tagid")}
+     *      )
+     **--/
+    private $tags;
+
+    // ...
+
+    public function __construct() {
+        $this->tags = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+	
+	
+	*/
 }
 ?>

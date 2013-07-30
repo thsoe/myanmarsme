@@ -14,9 +14,9 @@ echo '{"username" : "guest","result" : 0}';
 $log->LogInfo("User not found");
 
 
-}else if($user->getPassword()==$_POST["password"]){
-$user =$em->getRepository('SMEUser')->findOneBy((array('email' => $_POST["userName"])));
-$json ='{"username" : "'.$user->getFullName().'","result" : 1,"email" : "'.$user->getEmail().'","phoneNumber" : "'.$user->getPhoneNo().'","companies" : {"company":[';
+}else if($user->getPassword()== $_POST["password"]){
+$user = $em->getRepository('SMEUser')->findOneBy((array('email' => $_POST["userName"])));
+$json = '{"username" : "'.$user->getFullName().'","result" : 1,"email" : "'.$user->getEmail().'","phoneNumber" : "'.$user->getPhoneNo().'","companies" : {"company":[';
 
 //echo '{"username" : "'.$user->getFullName().'","result" : 1,"email" : "'.$user->getEmail().'","phoneNumber" : "'.$user->getPhoneNo().'"}';
 //$log->LogInfo('{"companies" : [');

@@ -29,6 +29,8 @@ $("#email").attr('disabled', true);
 $("#phoneNumber").val(auth.phoneNumber);
 }
 var passwd=0;
+
+// when check on 'Enable Password Edit' checkbox, the password field can be edit.
 function enablePasswordFields(){
 if (passwd==0){
 passwd=1;
@@ -40,79 +42,74 @@ $("#password").attr("disabled", true);
 $("#confirmPassword").attr("disabled", true);
 }
 }
+
+// validation for user registration.
 function validateUserForm(){
 if($("#fullName").val()==""){
 	$("#fullNameError").show();
-$("#emailError").hide();
+	$("#emailError").hide();
 	$("#passwordError").hide();
-$("#confirmPasswordError").hide();
-$("#emailError2").hide();
-$("#confirmPasswordError2").hide();
-$("#phoneNumberError").hide();
-return false;
+	$("#confirmPasswordError").hide();
+	$("#emailError2").hide();
+	$("#confirmPasswordError2").hide();
+	$("#phoneNumberError").hide();
+	return false;
 }else if($("#email").val()==""){
 	$("#emailError").show();
 	$("#fullNameError").hide();
 	$("#passwordError").hide();
-$("#confirmPasswordError").hide();
-$("#emailError2").hide();
-$("#confirmPasswordError2").hide();
-$("#phoneNumberError").hide();
-
-
-return false;
+	$("#confirmPasswordError").hide();
+	$("#emailError2").hide();
+	$("#confirmPasswordError2").hide();
+	$("#phoneNumberError").hide();
+	return false;
 }else if($("#password").val()=="" && passwd==1 ){
 	$("#passwordError").show();
 	$("#fullNameError").hide();
-$("#emailError").hide();
-$("#confirmPasswordError").hide();
-$("#emailError2").hide();
-$("#confirmPasswordError2").hide();
-$("#phoneNumberError").hide();
-return false;
+	$("#emailError").hide();
+	$("#confirmPasswordError").hide();
+	$("#emailError2").hide();
+	$("#confirmPasswordError2").hide();
+	$("#phoneNumberError").hide();
+	return false;
 }
 else if($("#confirmPassword").val()=="" && passwd==1){
 	$("#confirmPasswordError").show();
 	$("#fullNameError").hide();
-$("#emailError").hide();
+	$("#emailError").hide();
 	$("#passwordError").hide();
-$("#emailError2").hide();
-$("#confirmPasswordError2").hide();
-$("#phoneNumberError").hide();
-return false;
+	$("#emailError2").hide();
+	$("#confirmPasswordError2").hide();
+	$("#phoneNumberError").hide();
+	return false;
 }
 else if(!validateEmail($("#email").val())){
-$("#emailError2").show();
+	$("#emailError2").show();
 	$("#fullNameError").hide();
 	$("#passwordError").hide();
-$("#confirmPasswordError").hide();
-$("#emailError").hide();
-$("#confirmPasswordError2").hide();
-$("#phoneNumberError").hide();
+	$("#confirmPasswordError").hide();
+	$("#emailError").hide();
+	$("#confirmPasswordError2").hide();
+	$("#phoneNumberError").hide();
 }else if($("#password").val()!=$("#confirmPassword").val()){
 	$("#fullNameError").hide();
-$("#emailError").hide();
-$("#emailError2").hide();
+	$("#emailError").hide();
+	$("#emailError2").hide();
 	$("#passwordError").hide();
-$("#confirmPasswordError").hide();
-$("#phoneNumberError").hide();
-$("#confirmPasswordError2").show();
-return false;
+	$("#confirmPasswordError").hide();
+	$("#phoneNumberError").hide();
+	$("#confirmPasswordError2").show();
+	return false;
 }else if(!validatePhNo($("#phoneNumber").val())){
 	$("#fullNameError").hide();
-$("#emailError").hide();
-$("#emailError2").hide();
+	$("#emailError").hide();
+	$("#emailError2").hide();
 	$("#passwordError").hide();
-$("#confirmPasswordError").hide();
-$("#confirmPasswordError2").hide();
-$("#phoneNumberError").show();
-return false;
+	$("#confirmPasswordError").hide();
+	$("#confirmPasswordError2").hide();
+	$("#phoneNumberError").show();
+	return false;
 }else{
-return true;	
+	return true;	
 }
 }
-
-/* function facebook_register()
-{
-	$("#userForm").load(navigation.register_api);
-} */

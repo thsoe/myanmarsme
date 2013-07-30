@@ -9,14 +9,14 @@
 	{
 		$tagid_arr = array();
 		$tags_arr = explode(',', $_POST["tags"]);
-print_r($tags_arr);		
+		//print_r($tags_arr);//exit();
 		for ($i=0; $i<count($tags_arr); $i++)
 		{
+			//echo $tags_arr[$i];
 			$em = ConnectionUtil::getEntityManager();
-			$query =$em->createQuery("SELECT tt FROM Tags tt WHERE tagname = :alphabet");
+			$query =$em->createQuery("SELECT tt FROM Tags tt WHERE tt.tagname = :alphabet");
 			$query->setParameter('alphabet', $tags_arr[$i]);
 			$result = $query->getResult();
-			print_r(count($result));exit();
 			if(count($result) == 0)
 			{
 				$tagname = $tags_arr[$i];
@@ -73,7 +73,7 @@ print_r($tags_arr);
 		foreach($tagid_arr as $tagid)
 		{
 			$logger=new KLogger ( "../logs/log.txt" , KLogger::DEBUG );
-			$logger->LogDebug("Tag Name:".$tagname);
+			$logger->LogDebug("Tag id:".$tagid);
 			$directorytag = new DirectoryTag1();
 			$directorytag->setdirectoryid($directory_id);
 			$directorytag->settagid($tagid);
@@ -90,7 +90,8 @@ print_r($tags_arr);
 		$msg = $e->getMessage();
 		$log->LogInfo($e->getMessage());
 		$success = 0;
+		$directory_id = '';
 	}
-	$arr = array('success'=>$success, 'msg'=> $msg);
+	$arr = array('success'=>$success, 'msg'=> $msg, 'directoryid'=> $directory_id);
 	echo json_encode($arr);
 ?>

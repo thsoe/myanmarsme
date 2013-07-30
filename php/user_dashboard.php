@@ -46,10 +46,15 @@
 			get_dashboard('user');
 		}
 		else
+		{
+			jQuery('#divuser').css('display','none');
 			jQuery('#divguesttext').css('display','inline');
+			jQuery('#divnewdirectory').css('display','none');
+		}
 	});
 	function get_dashboard(type, tag)
 	{
+		jQuery('#divdirectorydetail').html('');
 		email = '';
 		if(auth.result != 0 && type == 'user')
 			email = auth.email;		
@@ -68,9 +73,30 @@
 		}
 	}
 	
+	function display_directory(directoryid, type, is_private)
+	{
+		if(type == 1)
+		{
+			req_params = 'directoryid=' + directoryid + '&is_private=' + is_private;
+			tag_result = loadJSON(navigation.dashboard_exec,req_params);
+			jQuery('#divdirectorydetail').html(tag_result.guest_str);
+		}
+		else
+			jQuery('#divdirectorydetail').html('');
+	}
+	
 	function display_detail(directoryid)
 	{
-		
+		req_params = 'directoryid=' + directoryid;
+		tag_result = loadJSON(navigation.dashboard_exec,req_params);
+		//alert(tag_result.guest_str);
+		jQuery('#divdirectorydetail').html(tag_result.guest_str);
+	}
+	
+	function edit_directory(directoryid, companyid)
+	{
+		req_params = 'directoryid=' + directoryid + '&companyid=' + companyid;
+		tag_result = loadJSON(navigation.editdirectory,req_params);
 	}
 </script>
 <form id="frmdashboard" name="frmdashboard">
@@ -111,7 +137,7 @@
 					
 				</table>
 			</td>
-			<td id="divdirectorydetail" width="50%">
+			<td id="divdirectorydetail" width="50%" valign="top">
 				&nbsp;
 			</td>
 		</tr>
