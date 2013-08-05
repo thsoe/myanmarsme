@@ -56,9 +56,10 @@
 	{
 		jQuery('#divdirectorydetail').html('');
 		email = '';
-		if(auth.result != 0 && type == 'user')
+		if(auth.result != 0)
 			email = auth.email;		
-		req_params = 'email=' + email;
+		req_params = 'email=' + email + '&type=' + type;
+		
 		if(tag == undefined)
 			req_params += '&tagid=0';
 		else
@@ -95,8 +96,11 @@
 	
 	function edit_directory(directoryid, companyid)
 	{
-		req_params = 'directoryid=' + directoryid + '&companyid=' + companyid;
-		tag_result = loadJSON(navigation.editdirectory,req_params);
+		$.cookies.set("editdirectoryid", directoryid);
+		$.cookies.set("editcompanyid", companyid);
+		goto(navigation.editdirectory);
+		/* req_params = 'directoryid=' + directoryid + '&companyid=' + companyid;
+		tag_result = loadJSON(navigation.editdirectory,req_params); */
 	}
 </script>
 <form id="frmdashboard" name="frmdashboard">
