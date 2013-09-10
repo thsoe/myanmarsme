@@ -304,7 +304,8 @@ $("#error").hide();
 //$("#lfupload").show();
 $.cookies.set("session", JSON.stringify(auth));
 //setCookie("session",auth,1);
-goto(navigation.home);}
+//goto(navigation.home);}
+goto(navigation.dashboard);}
 }}
 }
 
@@ -336,7 +337,8 @@ function authenticate_api(email, name)
 			parseHeader();
 			$("#error").hide();
 			$.cookies.set("session", JSON.stringify(auth));
-			goto(navigation.home);
+			//goto(navigation.home);
+			goto(navigation.dashboard);
 		}
 	}
 }
@@ -359,6 +361,14 @@ $.cookies.del("session");
 //goto(navigation.home);
 window.location = '#';
 window.location.reload();
+}
+
+function home_dashboard()
+{
+	if(auth.result == 0 )
+		goto(navigation.home);
+	else
+		goto(navigation.dashboard);
 }
 
 var fullName="";

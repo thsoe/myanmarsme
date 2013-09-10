@@ -113,8 +113,7 @@ class UserDirectory
 	public function toJSON(){
 	return '{ "directoryid":"'.$this->directoryid.'","name":"'.$this->name.'",
 				"colorcode":"'.$this->colorcode.'","description":"'.$this->description.'",
-				"public":"'.$this->public.'","rating":"'.$this->rating.'"}';
-
+				"smeuseremail":"'.$this->smeuseremail.'","public":"'.$this->public.'","rating":"'.$this->rating.'"}';
 				//,"tagid":"'.$this->gettagid().'","tagname":"'.$this->directorytag->getTagname().'"				
 	 }
 	 

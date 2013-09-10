@@ -7,19 +7,6 @@
 	require_once 'include/connection_util.php';
 	
 	try{
-		//$em = ConnectionUtil::getEntityManager();
-		//print_r($em);
-		/* $query =$em->executeQuery("SELECT DISTINCT tagname FROM tags");
-		$tags_result = $query->getResult();
-		for ($i=1; $i<=count($tags_result); $i++)
-		{
-			print_r($array[$i]);echo '<br>';
-		}
-		 */
-		/* $directory =$em->findAll('Tags');
-		ConnectionUtil::commit();
-		print_r($directory); */
-		//$directory =$em->findByCriteriaWithLimit('User',$_POST["userName"]);
 		ConnectionUtil::beginTransaction();
 		$companies=ConnectionUtil::findAll('Tags');
 		ConnectionUtil::commit();
@@ -34,44 +21,51 @@
 	}
 ?>
 <script type="text/javascript" src="/js/urlcheck.js"></script>
-<!--script type="text/javascript" src="/js/sme/dashboard_data.js"></script-->
+<script type="text/javascript" src="/js/sme/user_dashboard.js"></script>
 <script type="text/javascript">
-	jQuery(document).ready(function(){
-		get_dashboard();
-	});
-	function get_dashboard(tag)
-	{
-		if(tag == undefined)
-			req_params = 'tagid=0';
-		else
-			req_params = 'tagid=' + tag.value;
-		tag_result = loadJSON(navigation.dashboard_exec,req_params);
-		if(tag_result.success)
-		{
-			jQuery('#tblguestdashboard').html(tag_result.guest_str);
-		}
-	}
+	
 </script>
 <form id="frmdashboard" name="frmdashboard">
 	<h2  style="border-bottom:1px solid #f58220;color:#f58220;padding-bottom:5px;font-size:13px;">
-		<strong id="pinfo">Welcome Guest</strong>
-		
+		<strong id="pinfo">Directories</strong>
 	</h2>
-	<br />Your Directories:<br /><br />
-	you can create your own directory of SMEs, People, Resources , etc here.<br />
-	Please register to use the complete set of features<br /><br />
-	Discover Directories : 
-	<!--img src="/images/tag.png" /-->
-	<select id = "seltag" name = "seltag" onchange="get_dashboard(this)">
-		<option value="0">All Tags</option>
-		<?php echo $tag_str; ?>
-	</select>
-	<br /><br />
-	<table id="tblguestdashboard" width="50%" border="0" cellpadding="7" cellspacing="0" align="center">
-		
+	<table id="divdashboard_result">
+		<tr>
+			<td width="50%">
+				<div id="divguesttext" style="display:none;">
+					<br /><br />you can create your own directory of SMEs, People, Resources , etc here.<br />
+					Please register to use the complete set of features
+				</div>
+				<br /><br />	
+				<div id="divuser" style="display:none;" >
+					Your Directories:
+					<select id = "selusertag" name = "selusertag" onchange="get_dashboard('user', this)">
+						<option value="0">All Tags</option>
+						<?php echo $tag_str; ?>
+					</select>
+				</div>
+				<br /><br />
+				<table id="tbluserdashboard" border="0" cellpadding="7" cellspacing="0" align="center">
+					
+				</table>
+				<div id="divnewdirectory" >
+					<br /><br />
+					<a id="get_started" href="javascript:goto(navigation.newdirectory)" style="float:left">Create Your Directory</a>
+				</div>
+				<br />Discover Directories : 
+				<!--img src="/images/tag.png" /-->
+				<select id = "seltag" name = "seltag" onchange="get_dashboard('guest', this)">
+					<option value="0">All Tags</option>
+					<?php echo $tag_str; ?>
+				</select>
+				<br /><br />
+				<table id="tblguestdashboard" border="0" cellpadding="7" cellspacing="0" align="center">
+					
+				</table>
+			</td>
+			<td id="divdirectorydetail" width="50%" valign="top">
+				&nbsp;
+			</td>
+		</tr>
 	</table>
-	<table id="tbluserdashboard" width="50%" border="0" cellpadding="7" cellspacing="0" align="center">
-		
-	</table>
-
 </form>

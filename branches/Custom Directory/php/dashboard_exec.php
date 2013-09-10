@@ -8,7 +8,7 @@
 	$cri_str = ' WHERE 1=1';
 	$email = '';
 	$type = 'guest';
-	if(isset($_POST['tagid']))
+	if(isset($_POST['tagid']))		// display directory
 	{
 		if(isset($_POST['tagid']) && $_POST['tagid'] > 0)
 			$cri_str .= ' AND dt.tagid = ' . $_POST['tagid'];
@@ -46,14 +46,17 @@
 						$result_arr = $result[$i]->toJSON();
 						$result_arr = json_decode($result_arr);
 						
+						$user = $em->getRepository('SMEUser')->findOneBy((array('email' => $result_arr->smeuseremail)));
+						//echo $user->getFullName();exit();
 						$guest_str .= "<td width='100px' height='50px' style='text-decoration:none;' 
-										onclick = 'display_directory(" . $result_arr->directoryid . ", 1, 1);' 
-										onblur='display_directory(" . $result_arr->directoryid . ", 2, 1);'
+										onclick = \"display_list(" . $result_arr->directoryid . ", '" . $type . "');\" 
 										>
 											<div style='text-align:center;width:100px;height:50px;border:1px solid black;background:" . $result_arr->colorcode .";'>" .
-											$result_arr->name . "<br />" . $result_arr->description . 
+											$result_arr->name . "<br />By " . $user->getFullName() . 
 											"</div>
 										</td>";
+						//echo $guest_str;exit();
+						
 					}
 				}
 			}
@@ -76,15 +79,23 @@
 						}
 						$result_arr = $result[$i]->toJSON();
 						$result_arr = json_decode($result_arr);
-						
+						$user = $em->getRepository('SMEUser')->findOneBy((array('email' => $result_arr->smeuseremail)));
 						$guest_str .= "<td width='100px' height='50px' style='text-decoration:none;' 
+										onclick = \"display_list(" . $result_arr->directoryid . ", '" . $type . "');\" 
+										>
+											<div style='text-align:center;width:100px;height:50px;border:1px solid black;background:" . $result_arr->colorcode .";'>" .
+											$result_arr->name . "<br />By " . $user->getFullName() . 
+											"</div>
+										</td>";
+										
+						/*$guest_str .= "<td width='100px' height='50px' style='text-decoration:none;' 
 										onclick = 'display_directory(" . $result_arr->directoryid . ", 1, 2);' 
 										onblur='display_directory(" . $result_arr->directoryid . ", 2, 2);'
 										>
 											<div style='text-align:center;width:100px;height:50px;border:1px solid black;background:" . $result_arr->colorcode .";'>" .
-											$result_arr->name . "<br />" . $result_arr->description . 
+											$result_arr->name . "<br />By " . $user->getFullName() . 
 											"</div>
-										</td>";
+										</td>";*/
 					}
 				}
 			}
@@ -99,7 +110,7 @@
 		echo json_encode($arr);
 	}
 
-	if(isset($_POST['directoryid']))
+	if(isset($_POST['directoryid']))		// display detail
 	{
 		$is_private = 1;
 		if(isset($_POST['is_private']))
