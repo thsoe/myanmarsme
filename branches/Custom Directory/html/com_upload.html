@@ -1,5 +1,8 @@
 <script type="text/javascript" src="/js/urlcheck.js"></script>
 <script type="text/javascript" src="/js/sme/directory.js"></script>
+<script>
+	$('.colorpicker').css('display', 'none');
+</script>
             	<div class="title_bar"><span>Company Detail</span></div>
                 <div class="content_top"><div class="cor_lf_t"></div><div class="cor_rt_t"></div></div><!--do not touch this, this is for image-->
 
@@ -102,9 +105,10 @@
                       <tr>
                         <td align="left" valign="top" style="">&nbsp;</td>
                         <td align="left" valign="top" style="">
-                            <span style="padding:1px 30px 0 0;float:left;"><input class="button" type="reset" value="CLEAR" /></span>
+                            <!--span style="padding:1px 30px 0 0;float:left;"><input class="button" type="reset" value="CLEAR" /></span-->
                             <!--a href="javascript:upload_company();" class="button">Upload</a-->
 							<input class="button" type="submit" value="Upload" onclick="upload_company();"/>
+							<input class="button" type="button" value="Cancel" onclick="javascript:goto(navigation.user_directorylist);" />
                         </td>
                       </tr>
                     </table>
