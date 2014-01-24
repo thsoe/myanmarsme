@@ -134,6 +134,8 @@ fcn();
 }
 
 function goto(url,params){
+var lhref = window.location.href;
+//alert('aaa=' + lhref.search(/guest_directorylist.php/));
 req_params = params;
 
 
@@ -155,7 +157,10 @@ $("#lf_content").show();
 $("#md_content2").width("765px");
 }
 
-window.location.hash="#"+links[url];
+if(lhref.search(/guest_directorylist.php/) > 0 || lhref.search(/user_directorylist.php/) > 0)
+	window.location.href="../index2.html#"+links[url];
+else
+	window.location.hash="#"+links[url];
 }
 function loadMainContent(url){
 	$("#maincontent").load(url);
