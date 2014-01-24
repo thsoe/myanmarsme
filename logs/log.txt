@@ -1,502 +1,152 @@
-2013-04-27 20:17:24 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-04-27 20:17:24 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-04-27 20:17:45 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-04-27 20:18:07 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-04-27 20:18:28 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-04-27 20:18:49 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-04-27 20:19:10 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-04-27 20:19:31 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-04-27 22:42:56 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-04-27 22:43:01 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-04-27 22:43:02 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-04-27 22:43:02 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-04-27 22:43:02 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-04-27 22:43:02 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-04-27 22:43:02 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-04-27 22:43:03 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-04-27 22:43:03 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-04-27 22:43:03 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-04-27 22:43:04 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-04-27 22:43:04 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-04-27 22:43:04 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-04-27 22:43:04 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-04-27 22:43:05 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-04-27 22:43:05 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-04-27 22:43:26 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-04-27 22:43:48 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-04-27 22:44:09 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-04-27 22:44:30 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-04-27 22:44:51 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-04-27 22:45:25 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 16:04:07 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:07 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:08 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:08 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:08 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:08 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:09 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:09 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:09 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:09 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:10 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:10 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:10 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:10 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:11 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:11 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:11 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:12 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:12 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:12 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:12 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:13 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:13 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:13 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:13 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:14 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:14 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:14 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:15 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:28 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:58 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:59 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:59 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:04:59 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:05:00 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:05:00 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:05:00 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:05:00 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:05:01 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:05:01 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:05:01 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:05:01 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:05:01 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:05:02 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:05:02 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:05:02 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:05:02 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:05:03 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:05:03 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:05:03 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:05:03 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:05:04 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:05:04 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:05:04 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:05:04 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:05:05 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:05:05 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:05:05 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:05:05 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:05:18 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:07:29 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:07:41 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:07:53 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:08:05 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:08:06 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:08:06 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:08:06 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:08:07 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:08:07 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:08:07 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:08:08 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:08:08 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:08:08 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:08:08 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:08:09 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:08:09 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:08:09 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:08:10 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:08:10 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:08:10 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:08:11 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:08:11 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:08:11 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:08:12 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:08:12 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:08:12 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:08:12 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:08:13 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:08:13 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:20:04 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:20:59 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 16:20:59 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 16:21:20 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 16:21:20 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:21 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:21 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 16:21:21 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:21 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:21 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:21 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:22 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:22 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:22 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:22 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:22 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:22 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:23 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:23 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:23 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:23 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:23 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:23 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:24 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:24 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:24 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:24 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:24 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:24 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:25 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:25 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:25 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:25 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:25 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:25 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:25 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:26 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:26 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:26 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:26 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:26 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:26 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:27 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:27 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:27 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:27 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:27 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:28 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:28 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:28 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:28 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:28 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:28 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:29 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:29 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:29 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 16:21:29 - ERROR --> SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known.  
-2013-05-04 17:44:46 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 17:45:07 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 17:45:29 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 17:45:50 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 17:46:11 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 17:46:32 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 17:47:58 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 17:48:19 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 17:49:45 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 17:50:49 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 17:51:10 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 17:51:31 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 17:51:53 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 17:52:14 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 17:52:35 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 17:52:56 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 17:53:18 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 17:53:39 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 17:54:00 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 17:54:21 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 17:56:08 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 17:57:33 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 17:57:54 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 17:58:15 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 17:58:37 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 17:58:58 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 17:59:19 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 17:59:40 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 18:00:02 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 18:00:23 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 18:00:44 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 18:01:06 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 18:01:27 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 18:01:48 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 18:02:09 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 18:02:31 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 18:02:52 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 18:03:13 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 18:03:34 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 18:03:56 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 18:04:17 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 18:04:38 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 18:05:00 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 18:05:21 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 18:05:42 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-04 18:06:16 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:41:32 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:42:35 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:42:56 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:43:17 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:43:38 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:43:59 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:44:20 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:44:42 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:45:03 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:45:24 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:45:45 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:46:06 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:46:27 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:46:48 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:47:09 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:47:31 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:47:52 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:48:13 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:48:34 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:48:55 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:49:16 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:49:37 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:51:41 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:51:41 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:52:02 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:52:23 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:52:45 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:53:06 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:53:27 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:53:48 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:54:09 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:54:30 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:54:51 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:55:12 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:55:16 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:55:34 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:56:19 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:56:40 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:57:01 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:57:22 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:57:44 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:58:05 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:58:26 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:58:47 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:59:08 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:59:29 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 12:59:50 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 13:00:12 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 13:00:33 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 13:00:54 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 13:01:15 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 13:01:36 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 13:01:57 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 13:02:18 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 13:02:39 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 13:03:00 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 13:03:22 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 13:03:43 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 13:04:04 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 13:04:25 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 13:04:46 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 13:05:07 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 13:05:37 - ERROR --> SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
- 
-2013-05-05 13:06:37 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:37 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:37 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:37 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:37 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:37 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:38 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:38 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:38 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:38 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:38 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:38 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:38 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:38 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:38 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:39 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:39 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:39 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:39 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:39 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:39 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:39 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:39 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:39 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:40 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:40 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:40 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:40 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:40 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:53 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:53 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:54 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:54 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:54 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:54 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:54 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:54 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:54 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:54 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:54 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:54 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:54 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:54 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:55 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:55 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:55 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:55 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:55 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:55 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:55 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:55 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:55 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:55 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:55 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:55 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:55 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:56 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:06:56 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:07:09 - ERROR --> SQLSTATE[28000] [1045] Access denied for user 'msmeadmin'@'localhost' (using password: YES) 
-2013-05-05 13:10:31 - ERROR --> SQLSTATE[42000] [1049] Unknown database 'msmeadmin' 
-2013-05-05 13:10:31 - ERROR --> SQLSTATE[42000] [1049] Unknown database 'msmeadmin' 
-2013-05-05 13:10:31 - ERROR --> SQLSTATE[42000] [1049] Unknown database 'msmeadmin' 
-2013-05-05 13:10:31 - ERROR --> SQLSTATE[42000] [1049] Unknown database 'msmeadmin' 
-2013-05-05 13:10:31 - ERROR --> SQLSTATE[42000] [1049] Unknown database 'msmeadmin' 
-2013-05-05 13:10:32 - ERROR --> SQLSTATE[42000] [1049] Unknown database 'msmeadmin' 
-2013-05-05 13:10:32 - ERROR --> SQLSTATE[42000] [1049] Unknown database 'msmeadmin' 
-2013-05-05 13:10:32 - ERROR --> SQLSTATE[42000] [1049] Unknown database 'msmeadmin' 
-2013-05-05 13:10:32 - ERROR --> SQLSTATE[42000] [1049] Unknown database 'msmeadmin' 
-2013-05-05 13:10:32 - ERROR --> SQLSTATE[42000] [1049] Unknown database 'msmeadmin' 
-2013-05-05 13:10:32 - ERROR --> SQLSTATE[42000] [1049] Unknown database 'msmeadmin' 
-2013-05-05 13:10:32 - ERROR --> SQLSTATE[42000] [1049] Unknown database 'msmeadmin' 
-2013-05-05 13:10:32 - ERROR --> SQLSTATE[42000] [1049] Unknown database 'msmeadmin' 
-2013-05-05 13:10:32 - ERROR --> SQLSTATE[42000] [1049] Unknown database 'msmeadmin' 
-2013-05-05 13:10:32 - ERROR --> SQLSTATE[42000] [1049] Unknown database 'msmeadmin' 
-2013-05-05 13:10:33 - ERROR --> SQLSTATE[42000] [1049] Unknown database 'msmeadmin' 
-2013-05-05 13:10:33 - ERROR --> SQLSTATE[42000] [1049] Unknown database 'msmeadmin' 
-2013-05-05 13:10:33 - ERROR --> SQLSTATE[42000] [1049] Unknown database 'msmeadmin' 
-2013-05-05 13:10:33 - ERROR --> SQLSTATE[42000] [1049] Unknown database 'msmeadmin' 
-2013-05-05 13:10:33 - ERROR --> SQLSTATE[42000] [1049] Unknown database 'msmeadmin' 
-2013-05-05 13:10:33 - ERROR --> SQLSTATE[42000] [1049] Unknown database 'msmeadmin' 
-2013-05-05 13:10:33 - ERROR --> SQLSTATE[42000] [1049] Unknown database 'msmeadmin' 
-2013-05-05 13:10:33 - ERROR --> SQLSTATE[42000] [1049] Unknown database 'msmeadmin' 
-2013-05-05 13:10:33 - ERROR --> SQLSTATE[42000] [1049] Unknown database 'msmeadmin' 
-2013-05-05 13:10:33 - ERROR --> SQLSTATE[42000] [1049] Unknown database 'msmeadmin' 
-2013-05-05 13:10:33 - ERROR --> SQLSTATE[42000] [1049] Unknown database 'msmeadmin' 
-2013-05-05 13:10:34 - ERROR --> SQLSTATE[42000] [1049] Unknown database 'msmeadmin' 
-2013-05-05 13:10:34 - ERROR --> SQLSTATE[42000] [1049] Unknown database 'msmeadmin' 
-2013-05-05 13:10:34 - ERROR --> SQLSTATE[42000] [1049] Unknown database 'msmeadmin' 
-2013-05-05 13:10:49 - ERROR --> SQLSTATE[42000] [1049] Unknown database 'msmeadmin' 
+2013-10-25 9:57:22 - INFO  --> User not found 
+2013-11-01 18:01:09 - DEBUG --> Email:thanminzaw@gmail.com 
+2013-11-01 18:01:09 - INFO  --> { "fullName":"Than Min Zaw","password":"kyawsanmoe","email":"thanminzaw@gmail.com","phoneNo":"09421034856"} 
+2013-11-05 17:34:17 - INFO  --> User not found 
+2013-11-15 11:15:50 - DEBUG --> Email:soebo83@gmail.com 
+2013-11-15 11:15:50 - INFO  --> { "fullName":"soebobo","password":"577789bo","email":"soebo83@gmail.com","phoneNo":"31581125"} 
+2013-11-15 11:24:20 - DEBUG --> Directory Name:trading 
+2013-11-15 11:24:20 - INFO  --> { "directoryid":"","name":"trading",
+				"colorcode":"#382b38","description":"",
+				"public":"1","rating":"1"} 
+2013-11-15 11:24:20 - DEBUG --> Tag id:3 
+2013-11-15 11:24:20 - INFO  --> { "directorytagid":"","directoryid":"8","tagid":"3"} 
+2013-11-24 16:24:09 - DEBUG --> Tag Name:Electronics 
+2013-11-24 16:24:09 - INFO  --> { "tagid":"","tagname":"Electronics"} 
+2013-11-24 16:24:09 - DEBUG --> Directory Name:test 
+2013-11-24 16:24:09 - INFO  --> { "directoryid":"","name":"test",
+				"colorcode":"#","description":"Components",
+				"public":"1","rating":"1"} 
+2013-11-24 16:24:09 - DEBUG --> Tag id:8 
+2013-11-24 16:24:09 - INFO  --> { "directorytagid":"","directoryid":"9","tagid":"8"} 
+2013-11-30 10:34:39 - DEBUG --> Email:yengag@gmail.com 
+2013-11-30 10:34:39 - INFO  --> { "fullName":"Ye","password":"Testye","email":"yengag@gmail.com","phoneNo":""} 
+2013-11-30 10:35:06 - DEBUG --> Email:aungkokothet@gmail.com 
+2013-11-30 10:35:06 - INFO  --> { "fullName":"Aung Ko Ko Thet","password":"nnnyantun","email":"aungkokothet@gmail.com","phoneNo":" 6581831053"} 
+2013-11-30 10:35:06 - INFO  --> SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'aungkokothet@gmail.com' for key 1 
+2013-11-30 10:50:24 - DEBUG --> Tag Name:Web Design 
+2013-11-30 10:50:24 - INFO  --> { "tagid":"","tagname":"Web Design"} 
+2013-11-30 10:50:24 - DEBUG --> Directory Name:Test by Ye 
+2013-11-30 10:50:24 - INFO  --> { "directoryid":"","name":"Test by Ye",
+				"colorcode":"#ff0000","description":"Testing",
+				"public":"1","rating":"1"} 
+2013-11-30 10:50:24 - DEBUG --> Tag id:9 
+2013-11-30 10:50:24 - INFO  --> { "directorytagid":"","directoryid":"10","tagid":"9"} 
+2013-12-05 16:49:27 - INFO  --> Wrong Password! 
+2013-12-25 14:02:18 - ERROR --> SQLSTATE[42S22]: Column not found: 1054 Unknown column 't0.weblink' in 'field list' 
+2013-12-25 14:13:06 - ERROR --> SQLSTATE[42S22]: Column not found: 1054 Unknown column 't0.weblink' in 'field list' 
+2013-12-25 14:36:39 - DEBUG --> Directory Name: 
+2013-12-25 14:36:39 - INFO  --> { "directoryid":"","name":"",
+				"colorcode":"#","description":"",
+				"public":"","rating":"1"} 
+2013-12-25 14:36:39 - DEBUG --> Tag id:3 
+2013-12-25 14:36:39 - INFO  --> { "directorytagid":"","directoryid":"11","tagid":"3"} 
+2013-12-25 15:11:13 - DEBUG --> Company Name:Wa Ha Ha 
+2013-12-25 15:11:13 - INFO  --> { "id":"","name":"Wa Ha Ha","logo":"","description":"","longDesc":"","image1":"","image2":"","image3":"","image4":"","image5":"","image6":"","businessAddress":"ohhh.","worksiteAddress":"","contactNo1":"kdkd","contactNo2":"","ad":"","rank":"","weblink":"url"} 
+2013-12-25 15:11:13 - DEBUG --> company id:66 
+2013-12-25 15:11:13 - INFO  --> { "directoryCompnayid":"","companyid":"66","directoryid":"7","compnayDescription":"Something Something","rank":"5"} 
+2013-12-25 15:11:13 - DEBUG --> directorycompany_id:10 
+2013-12-25 15:11:13 - INFO  --> { "id":"","directorycompanyid":"10","recommendation":"Whatever","linkoption":"1"} 
+2013-12-25 15:11:13 - INFO  --> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'linkoption' in 'field list' 
+2013-12-25 15:12:06 - ERROR --> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'd0_.linkoption' in 'field list' 
+2013-12-25 15:12:21 - DEBUG --> Company Name:Wa Ha Ha 
+2013-12-25 15:12:21 - INFO  --> { "id":"","name":"Wa Ha Ha","logo":"","description":"","longDesc":"","image1":"","image2":"","image3":"","image4":"","image5":"","image6":"","businessAddress":"ohhh.","worksiteAddress":"","contactNo1":"kdkd","contactNo2":"","ad":"","rank":"","weblink":"www.youtube.com"} 
+2013-12-25 15:12:21 - INFO  --> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'd0_.linkoption' in 'field list' 
+2013-12-25 15:13:12 - DEBUG --> Company Name:test 
+2013-12-25 15:13:12 - INFO  --> { "id":"","name":"test","logo":"","description":"","longDesc":"","image1":"","image2":"","image3":"","image4":"","image5":"","image6":"","businessAddress":"sss","worksiteAddress":"","contactNo1":"ssss","contactNo2":"","ad":"","rank":"","weblink":"www.youtube.com"} 
+2013-12-27 1:00:09 - ERROR --> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'd0_.linkoption' in 'field list' 
+2013-12-27 1:02:05 - DEBUG --> Company Name:ABC 
+2013-12-27 1:02:05 - INFO  --> { "id":"","name":"ABC","logo":"","description":"","longDesc":"","image1":"","image2":"","image3":"","image4":"","image5":"","image6":"","businessAddress":"Yangoon","worksiteAddress":"","contactNo1":"0987676","contactNo2":"","ad":"","rank":"","weblink":"www.abc.com"} 
+2013-12-27 1:02:05 - DEBUG --> company id:68 
+2013-12-27 1:02:05 - INFO  --> { "directoryCompnayid":"","companyid":"68","directoryid":"1","compnayDescription":"testing product","rank":"4"} 
+2013-12-27 1:02:05 - DEBUG --> directorycompany_id:11 
+2013-12-27 1:02:05 - INFO  --> { "id":"","directorycompanyid":"11","recommendation":"Great","linkoption":"1"} 
+2013-12-27 1:02:05 - INFO  --> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'linkoption' in 'field list' 
+2014-01-02 13:57:46 - INFO  --> User not found 
+2014-01-02 13:57:47 - DEBUG --> Email:thalsuzinwin@gmail.com 
+2014-01-02 13:57:47 - INFO  --> { "fullName":"Jar Jarr","password":"","email":"thalsuzinwin@gmail.com","phoneNo":""} 
+2014-01-02 14:51:12 - DEBUG --> Tag Name:software 
+2014-01-02 14:51:12 - INFO  --> { "tagid":"","tagname":"software"} 
+2014-01-02 14:51:12 - DEBUG --> Directory Name:misc 
+2014-01-02 14:51:12 - INFO  --> { "directoryid":"","name":"misc",
+				"colorcode":"#","description":"",
+				"public":"1","rating":"1"} 
+2014-01-02 14:51:12 - DEBUG --> Tag id:10 
+2014-01-02 14:51:12 - INFO  --> { "directorytagid":"","directoryid":"12","tagid":"10"} 
+2014-01-02 14:52:29 - DEBUG --> Company Name:testing 
+2014-01-02 14:52:29 - INFO  --> { "id":"","name":"testing","logo":"","description":"","longDesc":"","image1":"","image2":"","image3":"","image4":"","image5":"","image6":"","businessAddress":"West Aung Myay Tharsi housing, kamaryut Tsp","worksiteAddress":"","contactNo1":"430 89946","contactNo2":"","ad":"","rank":"","weblink":"www.tewebdevelopment.com"} 
+2014-01-02 14:52:29 - DEBUG --> company id:69 
+2014-01-02 14:52:29 - INFO  --> { "directoryCompnayid":"","companyid":"69","directoryid":"12","compnayDescription":"web and software development","rank":"5"} 
+2014-01-02 14:52:29 - DEBUG --> directorycompany_id:12 
+2014-01-02 14:52:29 - INFO  --> { "id":"","directorycompanyid":"12","recommendation":"it is so so good :D","linkoption":"1"} 
+2014-01-02 14:52:29 - INFO  --> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'linkoption' in 'field list' 
+2014-01-02 14:54:51 - DEBUG --> Company Name: 
+2014-01-02 14:54:51 - INFO  --> { "id":"","name":"","logo":"","description":"","longDesc":"","image1":"","image2":"","image3":"","image4":"","image5":"","image6":"","businessAddress":"","worksiteAddress":"","contactNo1":"","contactNo2":"","ad":"","rank":"","weblink":""} 
+2014-01-02 14:54:51 - INFO  --> SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null 
+2014-01-02 15:05:07 - DEBUG --> Company Name:testing 
+2014-01-02 16:19:48 - DEBUG --> Company Name:Test 101 
+2014-01-02 16:19:48 - INFO  --> { "id":"","name":"Test 101","logo":"","description":"","longDesc":"","image1":"","image2":"","image3":"","image4":"","image5":"","image6":"","businessAddress":"Ah mhite pone","worksiteAddress":"","contactNo1":"0007","contactNo2":"","ad":"","rank":"","weblink":"www.google.com"} 
+2014-01-02 16:19:48 - DEBUG --> company id:70 
+2014-01-02 16:19:48 - INFO  --> { "directoryCompnayid":"","companyid":"70","directoryid":"6","compnayDescription":"No","rank":"3"} 
+2014-01-02 16:19:48 - DEBUG --> directorycompany_id:13 
+2014-01-02 16:19:48 - INFO  --> { "id":"","directorycompanyid":"13","recommendation":"BAD","linkoption":"1"} 
+2014-01-02 16:19:48 - INFO  --> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'linkoption' in 'field list' 
+2014-01-02 16:26:11 - DEBUG --> Company Name:Test 102 
+2014-01-02 16:26:11 - INFO  --> { "id":"","name":"Test 102","logo":"","description":"","longDesc":"","image1":"","image2":"","image3":"","image4":"","image5":"","image6":"","businessAddress":"Ah mhite pone ah kyi sar","worksiteAddress":"","contactNo1":"007","contactNo2":"","ad":"","rank":"","weblink":"www.myanmarsme.com"} 
+2014-01-02 16:26:11 - DEBUG --> company id:71 
+2014-01-02 16:26:11 - INFO  --> { "directoryCompnayid":"","companyid":"71","directoryid":"6","compnayDescription":"No","rank":"2"} 
+2014-01-02 16:26:11 - DEBUG --> directorycompany_id:14 
+2014-01-02 16:26:11 - INFO  --> { "id":"","directorycompanyid":"14","recommendation":"Extra BAD","linkoption":"1"} 
+2014-01-02 16:26:11 - INFO  --> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'linkoption' in 'field list' 
+2014-01-02 16:28:00 - DEBUG --> Directory Name:Test 2 
+2014-01-02 16:28:00 - INFO  --> { "directoryid":"","name":"Test 2",
+				"colorcode":"#2b272b","description":"Test r",
+				"public":"1","rating":"1"} 
+2014-01-02 16:28:00 - DEBUG --> Tag id:7 
+2014-01-02 16:28:00 - INFO  --> { "directorytagid":"","directoryid":"13","tagid":"7"} 
+2014-01-02 16:29:56 - DEBUG --> Company Name:t 
+2014-01-02 16:29:56 - INFO  --> { "id":"","name":"t","logo":"","description":"","longDesc":"","image1":"","image2":"","image3":"","image4":"","image5":"","image6":"","businessAddress":"f","worksiteAddress":"","contactNo1":"f","contactNo2":"","ad":"","rank":"","weblink":"www.google.com"} 
+2014-01-02 16:29:56 - DEBUG --> company id:72 
+2014-01-02 16:29:56 - INFO  --> { "directoryCompnayid":"","companyid":"72","directoryid":"13","compnayDescription":"f","rank":"3"} 
+2014-01-02 16:29:56 - DEBUG --> directorycompany_id:15 
+2014-01-02 16:29:56 - INFO  --> { "id":"","directorycompanyid":"15","recommendation":"f","linkoption":"1"} 
+2014-01-02 16:29:56 - INFO  --> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'linkoption' in 'field list' 
+2014-01-02 18:14:17 - DEBUG --> Company Name:test1 
+2014-01-02 18:14:17 - INFO  --> { "id":"","name":"test1","logo":"","description":"","longDesc":"","image1":"","image2":"","image3":"","image4":"","image5":"","image6":"","businessAddress":"ss","worksiteAddress":"","contactNo1":"ss","contactNo2":"","ad":"","rank":"","weblink":"www.google.com"} 
+2014-01-02 18:14:17 - DEBUG --> company id:73 
+2014-01-02 18:14:17 - INFO  --> { "directoryCompnayid":"","companyid":"73","directoryid":"7","compnayDescription":"ss","rank":"4"} 
+2014-01-02 18:14:17 - DEBUG --> directorycompany_id:16 
+2014-01-02 18:14:17 - INFO  --> { "id":"","directorycompanyid":"16","recommendation":"ss","linkoption":"1"} 
+2014-01-02 18:14:17 - INFO  --> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'linkoption' in 'field list' 
+2014-01-19 15:17:15 - DEBUG --> Directory Name:ww direcotory 
+2014-01-19 15:17:15 - INFO  --> { "directoryid":"","name":"ww direcotory",
+				"colorcode":"#e391e3","description":"This is the testing directory",
+				"public":"1","rating":"1"} 
+2014-01-19 15:17:15 - DEBUG --> Tag id:10 
+2014-01-19 15:17:15 - INFO  --> { "directorytagid":"","directoryid":"14","tagid":"10"} 
+2014-01-19 15:19:18 - DEBUG --> Company Name:WW Software House 
+2014-01-19 15:19:18 - INFO  --> { "id":"","name":"WW Software House","logo":"","description":"","longDesc":"","image1":"","image2":"","image3":"","image4":"","image5":"","image6":"","businessAddress":"Yangon","worksiteAddress":"","contactNo1":"09-0911111","contactNo2":"","ad":"","rank":"","weblink":"www.google.com"} 
+2014-01-19 15:19:18 - DEBUG --> company id:74 
+2014-01-19 15:19:18 - INFO  --> { "directoryCompnayid":"","companyid":"74","directoryid":"14","compnayDescription":"Software of local customer","rank":"4"} 
+2014-01-19 15:19:18 - DEBUG --> directorycompany_id:17 
+2014-01-19 15:19:18 - INFO  --> { "id":"","directorycompanyid":"17","recommendation":"Recommand for the cheat and performance user","linkoption":"1"} 
+2014-01-19 15:19:18 - INFO  --> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'linkoption' in 'field list' 
+2014-01-19 15:20:48 - DEBUG --> Company Name:WW Software House 
+2014-01-19 15:20:48 - DEBUG --> company id:74 
+2014-01-19 15:20:48 - INFO  --> { "directoryCompnayid":"","companyid":"74","directoryid":"14","compnayDescription":"Software of local customer","rank":"4"} 
+2014-01-19 15:20:48 - DEBUG --> directorycompany_id:18 
+2014-01-19 15:20:48 - INFO  --> { "id":"","directorycompanyid":"18","recommendation":"Recommand for the cheat and performance user","linkoption":"1"} 
+2014-01-19 15:20:48 - INFO  --> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'linkoption' in 'field list' 
+2014-01-19 15:21:03 - DEBUG --> Company Name:WW Software House 
+2014-01-19 15:21:03 - DEBUG --> company id:74 
+2014-01-19 15:21:03 - INFO  --> { "directoryCompnayid":"","companyid":"74","directoryid":"14","compnayDescription":"Software of local customer","rank":"4"} 
+2014-01-19 15:21:03 - DEBUG --> directorycompany_id:19 
+2014-01-19 15:21:03 - INFO  --> { "id":"","directorycompanyid":"19","recommendation":"Recommand for the cheat and performance user","linkoption":"1"} 
+2014-01-19 15:21:03 - INFO  --> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'linkoption' in 'field list' 
+2014-01-19 15:22:03 - DEBUG --> Company Name:WW Software House 
+2014-01-19 15:22:03 - DEBUG --> company id:74 
+2014-01-19 15:22:03 - INFO  --> { "directoryCompnayid":"","companyid":"74","directoryid":"14","compnayDescription":"Software of local customer","rank":"4"} 
+2014-01-19 15:22:03 - DEBUG --> directorycompany_id:20 
+2014-01-19 15:22:03 - INFO  --> { "id":"","directorycompanyid":"20","recommendation":"Recommand for the cheat and performance user","linkoption":"1"} 
+2014-01-19 15:22:03 - INFO  --> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'linkoption' in 'field list' 
+2014-01-19 15:31:06 - ERROR --> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'd0_.linkoption' in 'field list' 
+2014-01-19 15:37:18 - ERROR --> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'd0_.linkoption' in 'field list' 
