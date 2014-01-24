@@ -1,137 +1,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Myanmar SME, Your One Stop Portal</title>
-<meta NAME="KEYWORDS" CONTENT="" />
-<meta NAME="TITLE" CONTENT="" />
-<meta NAME="DESCRIPTION" CONTENT="" />
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta http-equiv="pragma" content="no-cache" />
-<meta http-equiv="content-script-type" content="text/javascript" />
-<meta http-equiv="content-style-type" content="text/css" />
-<meta name="robots" content="index,follow" />
-<meta name="viewport" content="width=1024" />
-<link rel="shortcut icon" href="/images/xxx.ico" type="/image/vnd.microsoft.icon"/>
-<link rel="icon" type="image/png" href="/images/xxx.png" />
-<link href="/" rel="home" />
-<link href="/style/import.css" rel="stylesheet" type="text/css" media="screen,tv" charset="utf-8" />
-<script type="text/javascript" src="/js/jquery-1.4.2.min.js"></script>
-<script type="text/javascript" src="/js/jquery.ba-hashchange.js"></script>
-<script type="text/javascript" src="/js/jqNews.js"></script>
-<script type="text/javascript" src="/js/jquery.cookies.2.2.0.js"></script>
-<script type="text/javascript" src="/js/jquery.tinycarousel.min.js"></script>
-<script type="text/javascript" src="/js/common.js"></script>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-
-
-
-<script type="text/javascript">
-<!--
-var auth =$.cookies.get("session");//JSON.parse($.cookies.get("session"));//getCookie("session");
-if (auth ==null || auth ==""){
-auth ={
-"username" : "Guest",
-"result" : 0
-};
-var comtab;
-var oldhash;
-}
-var home_visited = 1;
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-24041989-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-$(function(){
-
-  // Bind the event.
-  $(window).hashchange( function(){
-
-    var hash = location.hash;
-    var param;
-    if(hash==""){
-    goto(navigation.home);
-    }else{
-    hash=hash.replace( /^#/, '' );
-    var temp = hash.split('%');
-    hash=temp[0];
-   param=temp[1];
-   if(hash!=oldhash){
-
- loadMainContent(navigation[hash]);
-
- oldhash=hash;
- }
-      if(param !=null){
-$("ul.tabs li").removeClass("active");
-$(".tab_content").hide(); //Hide all tab content
-if( comtab ==null  ){
-     comtab =$('li[name='+param+']');}
-	 if(("#"+param) !=comtab.find("a").attr("href")){
-	comtab =$('li[name='+param+']');
-	 }
-      comtab.addClass("active");
-var activeTab = "#"+param; //Find the rel attribute value to identify the active tab + content
-
-				$(activeTab).fadeIn();
-    }else{
-
-
-if(hash=="comList"){
-comtab=null;
-	$("ul.tabs li").removeClass("active");
-$(".tab_content").hide(); //Hide all tab content
-$("ul.tabs li:first").addClass("active").show(); //Activate first tab
-
-			$("#tab0").fadeIn();
-}
-}
-     }
-  })
-
-  // Trigger the event (useful on page load).
-  $(window).hashchange();
-
-});
-//-->
-</script>
-
-<script type="text/javascript">
-<!--temp script-->
-loadNavigation();
-links = swapJsonKeyValues(navigation);
-loadlables();
-var loggedIn = 0;
-
-</script>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="google-site-verification" content="Ug8HYQ26Sqmc69bPK77s8MIDT9B5YdwpWDFdv58usg8" />
+<meta name="description" content="Freelance Designer from Singapore who specailize in motion graphic, illustration, web and design."/>
+<meta name="keywords" content="Aung Shwe Oo, Freelance, desginer, Shwe Oo, motion, graphic, design, singapore, web, logo,
+web development"/>
+<title>Directory Share: Myanmar SME Project </title>
+   <link href="css/mystyle.css" rel="stylesheet">
 </head>
 
 <body>
-<div id="main">
-<div id="header">
-<!--#include virtual="/html/header.html" --> <!-- header.html can be loaded by Json, but for simplicty server side include is used-->
-</div>
-<div id="content">
-	<div id="md_content2">
-		<div id="md_content3">
-			<div id="maincontent">
-			<noscript>
-			<iframe src="/html/main.html" name="iframe_a" frameborder=0 width = 110% height = 900px></iframe>
-			</noscript>
-			</div>
-		</div><!--do not touch this, this is for image-->
-	</div><!--md_content-->
-</div>
-<div id="footer">
-<!--#include virtual="/html/footer.html" --><!-- footer.html can be loaded by Json, but for simplicty server side include is used-->
-</div>
-<p><!--main--></p>
-</div>
+<img src="images/coming_soon.jpg" alt="" class="image_box" />
+
+
+<div id="button_box"><a href="https://docs.google.com/forms/d/1c8VB-2OW5iHGlTYYy1k0C3wZiQ7mFppSn7PWiGdbMAw/viewform" target="_blank"><button class="btn btn-success btn-large" type="button">Enquire Now!</button></a></div>
+
 </body>
 </html>

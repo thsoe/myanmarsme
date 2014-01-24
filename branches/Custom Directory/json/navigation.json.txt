@@ -5,6 +5,8 @@
 "comDetailSandhi" : "/html/com_detail_Sandhi.html",
 "comUpload"       : "/html/com_upload.html",
 "comEdit"         : "/php/com_edit.php",
+"enitityUpload"   : "/html/entity_upload.html",
+"enitityEdit"  	  : "/php/entity_edit.php",
 "confirmation"    : "/html/confirmation.html",
 "map"             : "/html/map.html",
 "register"        : "/html/register.html",

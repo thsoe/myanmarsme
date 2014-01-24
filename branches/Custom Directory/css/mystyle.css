@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body
+{
+background-color: white;
+background-image:url(../images/solid.png);
+background-repeat:repeat;
+
+    color: #333333;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+	
+}
+
+button.btn.btn-large, input.btn.btn-large[type="submit"] {
+}
+.btn:first-child {
+}
+button.btn, input.btn[type="submit"] {
+}
+
+.btn {
+    border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+}
+
+.btn {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #F5F5F5;
+    background-image: linear-gradient(to bottom, #FFFFFF, #E6E6E6);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #A2A2A2;
+    border-image: none;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding: 4px 12px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+}
+input, button, select, textarea {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+label, input, button, select, textarea {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+}
+button, input {
+    line-height: normal;
+}
+button, input, select, textarea {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: middle;
+}
+body {
+    color: #333333;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+html {
+    font-size: 100%;
+}
+
+.image_box
+{
+display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    position: relative;
+box-shadow: 5px 5px 10px rgb(201, 201, 201);
+}
+
+div#contact_box
+{
+    background-color: #444444;
+    color: white;
+    display: block;
+    font-size: 18px;
+    left: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    position: relative;
+    top: -410px;
+    width: 250px;
+    z-index: 1000;
+	padding-top: 40px
+}
+span.post_1 
+{
+color: #FF0;
+font-size: 12px;	
+}
+span.contact_style, span.contact_style a
+{
+color: #9b9b9b;	
+ line-height: 22px;
+}
+
+.btn-large {
+    border-radius: 6px 6px 6px 6px;
+    font-size: 17.5px;
+    padding: 11px 19px;
+}
+.btn-primary {
+    background-color: #006DCC;
+    background-image: linear-gradient(to bottom, #0088CC, #0044CC);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+div#button_box
+{
+   display: block;
+    
+   left: 76px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    
+   top: -127px;
+    width: 200px;
+    z-index: 1000;
+
+}
+
+.btn-success{
+color: #ffffff;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+background-color: #5bb75b;
+background-image: -moz-linear-gradient(top, #62c462, #51a351);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+background-image: -o-linear-gradient(top, #62c462, #51a351);
+background-image: linear-gradient(to bottom, #62c462, #51a351);
+background-repeat: repeat-x;
+border-color: #51a351 #51a351 #387038;
+border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff51a351', GradientType=0);
+filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}

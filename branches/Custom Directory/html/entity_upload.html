@@ -1,0 +1,85 @@
+
+<script type="text/javascript" src="/js/sme/directory_list.js"></script>
+<script>
+	$('.colorpicker').css('display', 'none');
+</script>
+            	<div class="title_bar"><span>New Entry</span></div>
+                <div class="content_top"><div class="cor_lf_t"></div><div class="cor_rt_t"></div></div><!--do not touch this, this is for image-->
+
+                <div class="container">
+                	<form id="frmcompany" name="frmcompany" method="post"  enctype="multipart/form-data">
+                    <table width="100%" border="0" cellpadding="5" cellspacing="0">
+                      <tr>
+                        <td width="33%" align="left" valign="top" style="">Entity Name:</td>
+                        <td width="67%" align="left" valign="top" style="">
+                        	<input type="text" name="name" id="name" value="" style="width:400px;" onchange="display_url();" />
+                        </td>
+                      </tr>
+						<tr>
+                        <td width="33%" align="left" valign="top" style="">Url (If there is any):</td>
+                        <td width="67%" align="left" valign="top" style="">
+                        	<input type="text" name="txturl" id="txturl" value="" style="width:400px;" />
+                        </td>
+                      </tr>
+						<tr>
+                        <td width="33%" align="left" valign="top" style="">Rating:</td>
+                        <td width="67%" align="left" valign="top" style="">
+                        	<img src="images/no_rate.gif" id="imgrate1" onmouseover="change_image(1,1);" onmouseout="change_image(1,0);" onclick="select_rate(1);" style="cursor:pointer;" />
+                        	<img src="images/no_rate.gif" id="imgrate2" onmouseover="change_image(2,1);" onmouseout="change_image(2,0);" onclick="select_rate(2);" style="cursor:pointer;" />
+                        	<img src="images/no_rate.gif" id="imgrate3" onmouseover="change_image(3,1);" onmouseout="change_image(3,0);" onclick="select_rate(3);" style="cursor:pointer;" />
+                        	<img src="images/no_rate.gif" id="imgrate4" onmouseover="change_image(4,1);" onmouseout="change_image(4,0);" onclick="select_rate(4);" style="cursor:pointer;" />
+                        	<img src="images/no_rate.gif" id="imgrate5" onmouseover="change_image(5,1);" onmouseout="change_image(5,0);" onclick="select_rate(5);" style="cursor:pointer;" />
+							<input type="hidden" id="hidrate" name="hidrate" />
+						</td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="top" style="border-bottom:1px dotted #dfdfdf;">
+								Any related product or service you know of? :
+							</td>
+                        <td align="left" valign="top" style="border-bottom:1px dotted #dfdfdf;">
+                        	<textarea name="description" id="description" ROWS="4" style="width:400px;"></textarea>
+                        </td>
+                      </tr>
+						<tr>
+                        <td align="left" valign="top" style="border-bottom:1px dotted #dfdfdf;">
+								Share your recommendation/experience with the product or service :
+							</td>
+                        <td align="left" valign="top" style="border-bottom:1px dotted #dfdfdf;">
+                        	<textarea name="txtrecommend" id="txtrecommend" ROWS="4" style="width:400px;"></textarea>
+                        </td>
+                      </tr>
+					  <tr>
+                        <td align="left" valign="top" style="border-bottom:1px dotted #dfdfdf;">Business Address:</td>
+                        <td align="left" valign="top" style="border-bottom:1px dotted #dfdfdf;">
+                        	<textarea name="businessAddress" id="businessAddress" ROWS="4" style="width:400px;"></textarea>
+                        </td>
+                      </tr>
+					  <tr>
+                        <td align="left" valign="top" style="border-bottom:1px dotted #dfdfdf;">Contact Number 1:</td>
+                        <td align="left" valign="top" style="border-bottom:1px dotted #dfdfdf;">
+                        	<input type="text" name="contactNo1" id="contactNo1" value="" style="width:400px;" />
+                        </td>
+                      </tr>
+					  <tr>
+                        <td align="left" valign="top" style="border-bottom:1px dotted #dfdfdf;">Tag:</td>
+                        <td align="left" valign="top" style="border-bottom:1px dotted #dfdfdf;">
+                        	<input type="text" name="txttag" id="txttag" value="" style="width:400px;" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="top" style="">&nbsp;</td>
+                        <td align="left" valign="top" style="">
+							<input type="hidden" name="directoryid" id="directoryid">
+							<input class="button" type="submit" value="Upload" onclick="upload_company();"/>
+							<input class="button" type="button" value="Cancel" onclick="goback_directorylist();" />
+                        </td>
+                      </tr>
+                    </table>
+                    </form>
+                </div><!--container-->
+
+                <div class="content_btm"><div class="cor_lf_b"></div><div class="cor_rt_b"></div></div><!--do not touch this, this is for image-->
+
+            </div><!--md_content-->
+
+        </div><!--content-->

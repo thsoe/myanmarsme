@@ -3,6 +3,7 @@
 <script language="javascript" src="/js/color_picker/js/colorpicker.js"></script>
 <link type="text/css" href="/js/color_picker/css/colorpicker.css" rel="stylesheet" />
 <script>
+	// color picker
 	jQuery(document).ready(function(){
 		$('#txtcolor').ColorPicker(
 				{
@@ -25,7 +26,7 @@
 <p><!--do not touch this, this is for image--></p>
 <div class="container">
 <form id="frmnewdirectory" name="frmnewdirectory" method="post">
-<div id="divnewdirectory" class="container">	
+<!--div id="divnewdirectory" class="container"-->	
 	<h2  style="border-bottom:1px solid #f58220;color:#f58220;padding-bottom:5px;font-size:13px;">
 		<strong id="pinfo">Create new directory</strong>		
 	</h2>
@@ -48,11 +49,11 @@
 		Directory Tag 
 		<input type="text" name="txtdirectorytag" id="txtdirectorytag" />
 		<br /><br />
-		<a href="javascript:create_directory()" class="button" style="float:left;margin-right:10px;">Create Your Directory</a>
+		<a href="javascript:create_directory()" class="button" style="float:left;margin-right:10px;">Create</a>
 		<!--a href="javascript:goto(navigation.dashboard)" class="button" style="float:left;margin-right:10px;">Create Your Directory</a-->
         <a href="javascript:goto(navigation.dashboard) " class="button" style="float:left;margin-right:10px;">Cancel</a>
 	</div>	
-</div>
+<!--/div-->
 </form>
 </div>
 <p><!--container--></p>
