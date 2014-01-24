@@ -48,16 +48,4 @@
       });
       return false;
     }
-    $(settings.pop_class).mouseover(function() { activePop = $(settings.pop_class).index(this); });
-    $(settings.pop_class).mouseout(function() { activePop = null; });
-
-    $(document.body).click(function(){ 
-     closeInactivePop();
-    });
-    // toggle that pop
-    $(".pop_toggle").click(function(){
-      $(this).parent(settings.pop_class).toggleClass("active");
-    });
-  }
-
-})(jQuery);
+    $(settings.pop_class).mouseover(function() { activePop = $(
