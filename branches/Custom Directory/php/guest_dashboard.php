@@ -53,7 +53,6 @@
 					<a id="get_started" href="javascript:goto(navigation.newdirectory)" style="float:left">Create Your Directory</a>
 				</div>
 				<br />Discover Directories : 
-				<!--img src="/images/tag.png" /-->
 				<select id = "seltag" name = "seltag" onchange="get_dashboard('guest', this)">
 					<option value="0">All Tags</option>
 					<?php echo $tag_str; ?>

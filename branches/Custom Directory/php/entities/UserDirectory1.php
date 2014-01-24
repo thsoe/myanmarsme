@@ -14,7 +14,7 @@ class UserDirectory1
       }
 
 	  public function setdirectoryid($directoryid){
-		$this->directorytag->setdirectorytagid($directoryid);
+		//$this->directorytag->setdirectorytagid($directoryid);
 		$this->directoryid=$directoryid;
 	   }
 	   
@@ -94,6 +94,12 @@ class UserDirectory1
 	return '{ "directoryid":"'.$this->directoryid.'","name":"'.$this->name.'",
 				"colorcode":"'.$this->colorcode.'","description":"'.$this->description.'",
 				"public":"'.$this->public.'","rating":"'.$this->rating.'"}';
+
+				//,"tagid":"'.$this->gettagid().'","tagname":"'.$this->directorytag->getTagname().'"				
+	 }
+	 
+	 public function toeditJSON(){
+	return '{ "directoryid":"'.$this->directoryid.'","rating":"'.$this->rating.'"}';
 
 				//,"tagid":"'.$this->gettagid().'","tagname":"'.$this->directorytag->getTagname().'"				
 	 }

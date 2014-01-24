@@ -7,12 +7,12 @@
 	require_once 'include/connection_util.php';
 	$cri_str = ' WHERE 1=1';
 	$email = '';
-	//$type = 'guest';
+	$type = 'guest';
 	if(isset($_POST['directorylist']))		// display directory list
 	{
-		$directory_id = clean($_POST['directorylist']);
-		$email = clean($_POST['email']);
-		$type = clean($_POST['type']);
+		$directory_id = $_POST['directorylist'];
+		$email = $_POST['email'];
+		$type = $_POST['type'];
 		$cri_str .= " AND dc.directoryid  = " . $directory_id;
 		$success = false;
 		$guest_str = '';
@@ -85,19 +85,10 @@
 					$guest_str .= "<td width='100px' height='50px' style='text-decoration:none;' 
 									onclick = \"display_list(" . $directory_id . ", " . $company->getId() . ", 1, " . $is_private . ", '" . $type . "');\" 
 									>
-										<div style='text-align:center;width:100px;height:50px;border:1px solid black;background:#FFFFFF;'>" .
+										<div style='text-align:center;cursor:pointer;width:100px;height:50px;border:1px solid black;background:#FFFFFF;'>" .
 										 $company->getName() . 
 										"</div>
 									</td>";
-									
-					/* $guest_str .= "<td width='100px' height='50px' style='text-decoration:none;' 
-									onclick = 'display_directory(" . $result_arr->directoryid . ", 1, 2);' 
-									onblur='display_directory(" . $result_arr->directoryid . ", 2, 2);'
-									>
-										<div style='text-align:center;width:100px;height:50px;border:1px solid black;background:" . $result_arr->colorcode .";'>" .
-										$result_arr->name . "<br />By " . $user->getFullName() . 
-										"</div>
-									</td>"; */
 				}
 			}
 			$guest_str .= '</tr></table>
@@ -106,14 +97,14 @@
 									&nbsp;
 								</td>
 							</tr>
-						</table>';
+						</table>
+						<a href="../#dashboard" class="button" style="float:left;margin-right:10px;">Back</a>';
 			$success = true;
 		}
 		catch (Exception $e){
 			echo '<br>'.$e->getMessage();
 			$log->LogError($e->getMessage());
 		}
-		//$arr = array('success'=>$success, 'guest_str'=> $guest_str, 'user_str'=> $user_str);
 		$arr = array('success'=>$success, 'guest_str'=> $guest_str);
 		echo json_encode($arr);
 	}
@@ -122,17 +113,43 @@
 	{
 		$is_private = 1;
 		if(isset($_POST['is_private']))
-			$is_private = clean($_POST['is_private']);
+			$is_private = $_POST['is_private'];
 		if(isset($_POST['usertype']))
-			$type = clean($_POST['usertype']);
-		//echo $type;exit();
+			$type = $_POST['usertype'];
 		try{
 			$em = ConnectionUtil::getEntityManager();
-			//echo $_POST['directoryid'];exit();
+			// ------------------ select rate from user directory --------- //
+			$query1 =$em->createQuery("SELECT ud FROM UserDirectory1 ud WHERE ud.directoryid = " . $_POST['directoryid']);
+			$result1 = $query1->getResult();
+			//print_r
+			if(count($result1) > 0)
+			{
+				for ($i=0; $i<count($result1); $i++)
+				{
+					$result_arr1 = $result1[$i]->toJSON();
+					$result_arr1 = json_decode($result_arr1);
+					$rating = $result_arr1->rating;
+				}
+			}
+			$query2 =$em->createQuery("SELECT dc FROM DirectoryCompany dc WHERE dc.directoryid = " . $_POST['directoryid'] . " AND dc.companyid = " . $_POST['companyid']);
+			$result2 = $query2->getResult();
+			//print_r($result2);
+			if(count($result2) > 0)
+			{
+				for ($i=0; $i<count($result2); $i++)
+				{
+					$result_arr2 = $result2[$i]->toJSON();
+					$result_arr2 = json_decode($result_arr2);
+					$directoryCompnayid = $result_arr2->directoryCompnayid;
+					$compnayDescription = $result_arr2->compnayDescription;
+				}
+			}
+			//echo $rating;exit();
+			// ------------------ select company information --------- //	
+			$em = ConnectionUtil::getEntityManager();			
 			$cri_str .= ' AND cp.id = ' . $_POST['companyid'];
 			$query =$em->createQuery("SELECT cp FROM SMECompany cp " . $cri_str);
 			$result = $query->getResult();
-			//print_r($result);exit();
 			$guest_str = '';
 			if(count($result) > 0)
 			{
@@ -140,28 +157,33 @@
 				{
 					$result_arr = $result[$i]->toJSON();
 					$result_arr = json_decode($result_arr);
+					//----------- continue to write for detail --------------//
 					$guest_str .= "<div style='border:1px solid blue; margin:20px;'>";
-					$guest_str .= "<img src='/images/delete.png' style='margin:10px;' align='right' onclick=\"display_list(" . $_POST['directoryid'] . ", " . $_POST['companyid'] . ", 2, " . $is_private . ", '" . $type . "');\">";
-					/* $directorycompany = $em->getRepository('DirectoryCompany')->findOneBy((array('directoryid' => $result_arr->directoryid)));
-					if(! is_null($directorycompany))
+					$guest_str .= "<img src='/images/delete.png' style='margin:10px;cursor:pointer;' align='right' onclick=\"display_list(" . $_POST['directoryid'] . ", " . $_POST['companyid'] . ", 2, " . $is_private . ", '" . $type . "');\">";
+					$guest_str .= "<div style='width:100%;height:120px;'><div style='width:50%;float:left;'>
+						<iframe src='http://" . $result_arr->weblink . "' height='120px' width='100%' frameborder='1'> </iframe></div>
+						<div style='width:40%;float:right;'>" . $result_arr->name . "<br />" ;
+						//$result_arr->description;
+					
+					for($i=1;$i<=5;$i++)
 					{
-						$company = $em->getRepository('SMECompany')->findOneBy((array('id' => $directorycompany->getcompanyid()))); */
-					$guest_str .= "<div style='width:100%;height:120px;'><div style='width:40%;float:left;'>
-						<img src='" . $result_arr->logo . "' style='margin:20px;width:110px;height:110px;border:0.5px solid #38196a;' /></div>
-						<div style='width:60%;float:right;'>" . $result_arr->name . "<br />" . 
-						$result_arr->description . "</div></div>";
-					//}
+						if($i<=$rating)
+							$guest_str .= '<img src="/images/rate.gif" />';
+						else
+							$guest_str .= '<img src="/images/no_rate.gif" />';
+					}
+					$guest_str .= "</div></div>";
 					$guest_str .= "<br /><div style='margin:20px;'><strong style='font-size:17px;'>About</strong>";
 					if($is_private == 2 && $type == 'user')	
 						$guest_str .= "<div style='float:right; margin-right:10px;'>
-							<input type='button' onclick='edit_company(" .$_POST['directoryid'] . ", " . $_POST['companyid'] . ", " . $result_arr->id . ")' name='btnedit' id='btnedit' value='Edit'></div>";
+							<input type='button' style='cursor:pointer;' onclick='edit_company(" .$_POST['directoryid'] . ", " . $_POST['companyid'] . ", " . $result_arr->id . ")' name='btnedit' id='btnedit' value='Edit'></div>";
 					$guest_str .= "<br />" . 
 						$result_arr->name . "<br /><strong style='font-size:14px;'>Description</strong><br />" . 
-						$result_arr->description;
+						$compnayDescription;
 					
 						$guest_str .= "<br /><strong style='font-size:14px;'>General Information</strong><br />Please contact us at <br />" . 
-							$result_arr->businessAddress . " " . $result_arr->contactNo1 . " <br /> And you can contact at <br />" . 
-							$result_arr->worksiteAddress . " " . $result_arr->contactNo2;
+							$result_arr->businessAddress . " <br />" . $result_arr->contactNo1; //. " <br /> And you can contact at <br />" . 
+							//$result_arr->worksiteAddress . " " . $result_arr->contactNo2;
 					
 					$guest_str .= "</div></div>";
 					$success = 1;
@@ -177,12 +199,30 @@
 		echo json_encode($arr);
 	}
 	
-	function clean($str) 
+	if(isset($_POST['url_company_name']))
 	{
-		$str = @trim ( $str );
-		if (get_magic_quotes_gpc ()) {
-			$str = stripslashes ( $str );
+		try{
+			$em = ConnectionUtil::getEntityManager();
+			$cri_str .= "AND cp.name = '" . $_POST['url_company_name'] . "'";
+			$query =$em->createQuery("SELECT cp FROM SMECompany cp " . $cri_str);
+			$result = $query->getResult();
+			$url_str = '';
+			if(count($result) > 0)
+			{
+				for ($i=0; $i<count($result); $i++)
+				{
+					$result_arr = $result[$i]->toJSON();
+					$result_arr = json_decode($result_arr);					
+					$url_str .= $result_arr->weblink;
+				}
+			}
 		}
-		return mysql_real_escape_string ( $str );
+		catch (Exception $e){
+			$log->LogError($e->getMessage());
+			$url_str = '<br>'.$e->getMessage();
+			$success = 0;
+		}
+		$arr = array('success'=>$success, 'url_str'=> $url_str);
+		echo json_encode($arr);
 	}
 ?>

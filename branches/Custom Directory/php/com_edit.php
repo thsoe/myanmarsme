@@ -1,5 +1,5 @@
 <script type="text/javascript" src="/js/urlcheck.js"></script>
-<script type="text/javascript" src="/js/sme/directory.js"></script>
+<script type="text/javascript" src="/js/sme/directory_list.js"></script>
 <script>
 	$('.colorpicker').css('display', 'none');
 </script>
@@ -15,7 +15,6 @@
 		$directoryid = $_COOKIE['edit_directory'];
 	if(isset($_COOKIE['edit_company']))
 		$companyid = $_COOKIE['edit_company'];
-	// echo $directoryid;exit();
 	try{
 		$em = ConnectionUtil::getEntityManager();
 		$cri_str = ' WHERE com.id = ' . $companyid;
@@ -120,12 +119,10 @@
 				<td align="left" valign="top" style="">&nbsp;</td>
 				<td align="left" valign="top" style="">
 					<span style="padding:1px 30px 0 0;float:left;">
-						<!--input class="button" type="reset" value="CLEAR" /-->
 						<input class="button" type="submit" value="Update" onclick="update_company();"/>
 					</span>
 					<input type="hidden" name="directoryid" id="directoryid" value="<?php echo $directoryid; ?>" />
-					<!--a href="javascript:upload_company();" class="button">Upload</a-->
-					<input class="button" type="button" value="Cancel" onclick="javascript:goto(navigation.user_directorylist);" />
+					<input class="button" type="button" value="Cancel" onclick="cancel_com_edit('<?php echo $directoryid; ?>')" />
 				</td>
 			  </tr>
 			</table>
