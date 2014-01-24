@@ -16,6 +16,23 @@ class ConnectionUtil{
 	private static $em=NULL;
 	private static $lib = "lib/DoctrineORM/";
 	
+	/* private static $dbParams = array(
+    'dbname' => 'myanmarsme',
+    'user' => 'root',
+    'password' => 'soewaifamily',
+    'host' => 'localhost',
+    'driver' => 'pdo_mysql',
+	); */
+	
+	/*
+	private static $dbParams = array(
+    'dbname' => 'msmeadmiin',
+    'user' => 'root',
+    'password' => 'root',
+    'host' => 'localhost',
+    'driver' => 'pdo_mysql',
+	);*/
+	
 	private static $dbParams = array(
     'dbname' => 'msmeadminuat',
     'user' => 'msmeadminuat',

@@ -20,9 +20,9 @@
 		ConnectionUtil::save($user);
 		ConnectionUtil::commit();
 		$msg="Hello...".$_POST["fullName"].",\nThanks for your registration with our MMSME !\nWe have already sent you a confirmation mail to your mail address.";
-		//$transport = Swift_SmtpTransport::newInstance('relay-hosting.secureserver.net', 25);
+		$transport = Swift_SmtpTransport::newInstance('relay-hosting.secureserver.net', 25);
 
-		/*
+		
 		// Create the Mailer using your created Transport
 		$mailer = Swift_Mailer::newInstance($transport);
 
@@ -35,7 +35,7 @@
 
 		// Send the message
 		$result = $mailer->send($message);
-		*/
+		
 		//echo '{"result" : 0}';
 		$success = 1;
 	} catch (Exception $e) {

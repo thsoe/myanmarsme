@@ -194,7 +194,18 @@ class SMECompany
 
 	  public function setAd($ad){
 	  $this->ad=$ad;
-	   }	
+	   }
+	   
+   /** @Column(type="string") */
+      private $weblink;
+
+       public function getWeblink(){
+	  return $this->weblink;
+	  }
+
+	  public function setWeblink($weblink){
+	  $this->weblink=$weblink;
+	   }
 	   
 // public function toJSON(){
 //	 return '{"name":"'.$this->name;
@@ -203,7 +214,7 @@ class SMECompany
 
  public function toJSON(){
 	// return '{"name":"'.$this->name;
-	 return '{ "id":"'.$this->id.'","name":"'.$this->name.'","logo":"'.$this->logo.'","description":"'.$this->description.'","longDesc":"'.$this->longDesc.'","image1":"'.$this->image1.'","image2":"'.$this->image2.'","image3":"'.$this->image3.'","image4":"'.$this->image4.'","image5":"'.$this->image5.'","image6":"'.$this->image6.'","businessAddress":"'.$this->businessAddress.'","worksiteAddress":"'.$this->worksiteAddress.'","contactNo1":"'.$this->contactNo1.'","contactNo2":"'.$this->contactNo2.'","ad":"'.$this->ad.'","rank":"'.$this->rank.'"}';
+	 return '{ "id":"'.$this->id.'","name":"'.$this->name.'","logo":"'.$this->logo.'","description":"'.$this->description.'","longDesc":"'.$this->longDesc.'","image1":"'.$this->image1.'","image2":"'.$this->image2.'","image3":"'.$this->image3.'","image4":"'.$this->image4.'","image5":"'.$this->image5.'","image6":"'.$this->image6.'","businessAddress":"'.$this->businessAddress.'","worksiteAddress":"'.$this->worksiteAddress.'","contactNo1":"'.$this->contactNo1.'","contactNo2":"'.$this->contactNo2.'","ad":"'.$this->ad.'","rank":"'.$this->rank.'","weblink":"'.$this->weblink.'"}';
 	 }	
 
 //	public function toJSON(){

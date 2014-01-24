@@ -11,4 +11,6 @@
 	require_once 'entities/DirectoryTag.php';
 	require_once 'entities/DirectoryTag1.php';
 	require_once 'entities/DirectoryCompany.php';
+	require_once 'entities/CompanyTag1.php';
+	require_once 'entities/DirectoryCompanyRecomendation.php';
 ?>
