@@ -246,7 +246,6 @@
 				ConnectionUtil::commit();
 				$em = ConnectionUtil::getEntityManager();
 				$query =$em->createQuery("SELECT tt FROM SMECompany tt ORDER BY tt.id ASC");
-				echo $query;exit();
 				$result = $query->getResult();
 				if(count($result) > 0)
 				{
